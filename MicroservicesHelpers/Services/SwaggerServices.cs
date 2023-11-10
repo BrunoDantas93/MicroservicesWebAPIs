@@ -1,14 +1,16 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 
-namespace IdentityServer.Services;
+namespace MicroservicesHelpers.Services;
 
 public class SwaggerServices
 {
-    public static void SwaggerConfigs(WebApplicationBuilder builder)
+    public static void SwaggerConfigs(WebApplicationBuilder builder, string name, int version)
     {
         builder.Services.AddSwaggerGen(c =>
         {
-            c.SwaggerDoc("v1", new OpenApiInfo { Title = "IdentityServer", Version = "v1" });
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = name, Version = $"v{version}" });
 
             c.AddSecurityDefinition("UserAuth", new OpenApiSecurityScheme
             {

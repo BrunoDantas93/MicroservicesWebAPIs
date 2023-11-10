@@ -1,9 +1,12 @@
 using IdentityServer.Services;
 using IdentityServer.Services.Authentication;
 using MicroservicesHelpers.Models.Authentication;
+using MicroservicesHelpers.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<string>(builder.Configuration.GetSection("Salt"));
 builder.Services.Configure<AuthenticationConfiguration>(builder.Configuration.GetSection("Authentication"));
 
 // Add services to the container.
@@ -14,7 +17,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
-SwaggerServices.SwaggerConfigs(builder);
+SwaggerServices.SwaggerConfigs(builder, "IdentityServer", 2);
 
 SingletonService.SingletonConfig(builder);
 

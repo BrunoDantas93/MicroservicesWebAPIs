@@ -10,11 +10,5 @@ public class SingletonService
         //Helpers
         builder.Services.AddSingleton<UserAuthHelper>();
         builder.Services.AddSingleton<AppAuthHelper>();
-
-
-        //Services
-        builder.Services.AddSingleton<UserAuthService>();
-        builder.Services.AddSingleton<AppAuthService>();
-
     }
 }

@@ -2,10 +2,10 @@
 
 public class AuthenticationConfiguration
 {
-    public string UserAccessTokenSecret { get; set; }
-    public string UserRefreshTokenSecret { get; set; }
-    public string AppAccessTokenSecret { get; set; }
-    public string AppRefreshTokenSecret { get; set; }
+    public string UserPrivateKey { get; set; }
+    public string UserPublicKey { get; set; }
+    public string AppPrivateKey { get; set; }
+    public string AppPublicKey { get; set; }
     public int AccessTokenExpirationMinutes { get; set; }
     public int RefreshTokenExpirationMinutes { get; set; }
     public string Issuer { get; set; }

@@ -1,10 +1,12 @@
 ﻿using MicroservicesHelpers.Models.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
 namespace IdentityServer.Services.Authentication;
 
@@ -29,7 +31,7 @@ public class MultiAuthService
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = authConfig.Issuer,
                 ValidAudience = authConfig.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.UserAccessTokenSecret)),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.UserPublicKey)),
                 NameClaimType = "user_type" // Custom claim to differentiate user token
             };
         })
@@ -43,7 +45,7 @@ public class MultiAuthService
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = authConfig.Issuer,
                 ValidAudience = authConfig.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.AppAccessTokenSecret)),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.AppPublicKey)),
                 NameClaimType = "application_type" // Custom claim to differentiate application token
             };
             options.Events = new JwtBearerEvents

@@ -1,0 +1,36 @@
+version: '3.4'
+
+networks:
+  Microservices:  # Nome personalizado para a rede
+    driver: bridge
+
+services:
+  microservicesgateway:
+    image: ${DOCKER_REGISTRY-}microservicesgateway
+    build:
+      context: .
+      dockerfile: MicroservicesGateway/Dockerfile
+    ports:
+      - "9090:443"  # Mapeie para a porta 443 para HTTPS
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80  # Specify HTTPS and HTTP URLs
+    networks:
+      - Microservices
+
+  identityserver:
+    image: ${DOCKER_REGISTRY-}identityserver
+    build:
+      context: .
+      dockerfile: IdentityServer/Dockerfile
+    ports:
+      - "9091:443"  # Mapeie para a porta 443 para HTTPS
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80  # Specify HTTPS and HTTP URLs
+    networks:
+      - Microservices
+    labels:
+      com.docker.compose.network: Microservices
+      com.docker.compose.project: Microservices
+      com.docker.compose.version: 2.23.0

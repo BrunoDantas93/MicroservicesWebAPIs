@@ -10,6 +10,18 @@ C:\Users\brunodantas\Documents\GitHub\MicroservicesWebAPIs\MicroservicesHelpers\
 C:\Users\brunodantas\Documents\GitHub\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\refint\MicroservicesHelpers.dll
 C:\Users\brunodantas\Documents\GitHub\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.pdb
 C:\Users\brunodantas\Documents\GitHub\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\ref\MicroservicesHelpers.dll
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.deps.json
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.dll
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.pdb
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.csproj.AssemblyReference.cache
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.AssemblyInfoInputs.cache
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.AssemblyInfo.cs
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.csproj.CoreCompileInputs.cache
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.dll
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\refint\MicroservicesHelpers.dll
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.pdb
+C:\Projects\Nova pasta\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\ref\MicroservicesHelpers.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.deps.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.pdb

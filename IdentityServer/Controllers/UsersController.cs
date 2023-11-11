@@ -28,6 +28,12 @@ public class UsersController : ControllerBase
         }
     }
 
+    [HttpPost("Hello")]
+    public ActionResult<string> ert()
+    {
+        return "Hello";
+    }
+
     [HttpGet]
     [Authorize]
     public ActionResult Logout()

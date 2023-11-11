@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroservicesHelpers", "MicroservicesHelpers\MicroservicesHelpers.csproj", "{25403523-1987-47AA-925A-12A67809DF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesHelpers", "MicroservicesHelpers\MicroservicesHelpers.csproj", "{25403523-1987-47AA-925A-12A67809DF54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{3DAA04E2-B587-4276-8421-0FDDA4BD5905}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{3DAA04E2-B587-4276-8421-0FDDA4BD5905}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesGateway", "MicroservicesGateway\MicroservicesGateway.csproj", "{0F267868-8AA7-43A3-9771-071A738575B6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3DAA04E2-B587-4276-8421-0FDDA4BD5905}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DAA04E2-B587-4276-8421-0FDDA4BD5905}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DAA04E2-B587-4276-8421-0FDDA4BD5905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F267868-8AA7-43A3-9771-071A738575B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F267868-8AA7-43A3-9771-071A738575B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F267868-8AA7-43A3-9771-071A738575B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F267868-8AA7-43A3-9771-071A738575B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

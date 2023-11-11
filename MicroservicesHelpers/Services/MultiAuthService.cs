@@ -7,13 +7,16 @@ using System.Text;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using MicroservicesHelpers;
+using System.Security.Cryptography;
+using MicroservicesHelpers.Models;
 
 namespace IdentityServer.Services.Authentication;
 
 public class MultiAuthService
 {
     public static void Authentication(WebApplicationBuilder builder)
-    {
+    {         
         AuthenticationConfiguration authConfig = builder.Configuration.GetSection("Authentication").Get<AuthenticationConfiguration>();
 
         builder.Services.AddAuthentication(options =>
@@ -31,8 +34,23 @@ public class MultiAuthService
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = authConfig.Issuer,
                 ValidAudience = authConfig.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.UserPublicKey)),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.UserPrivateKey)),
                 NameClaimType = "user_type" // Custom claim to differentiate user token
+            };
+
+            options.Events = new JwtBearerEvents
+            {
+                OnMessageReceived = context =>
+                {
+                    var accessToken = context.Request.Query["access_token"];
+
+                    if (!string.IsNullOrEmpty(accessToken))
+                    {
+                        context.Token = accessToken;
+                    }
+
+                    return Task.CompletedTask;
+                }
             };
         })
         .AddJwtBearer("SecondJwtScheme", options =>
@@ -45,7 +63,7 @@ public class MultiAuthService
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = authConfig.Issuer,
                 ValidAudience = authConfig.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.AppPublicKey)),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.AppPrivateKey)),
                 NameClaimType = "application_type" // Custom claim to differentiate application token
             };
             options.Events = new JwtBearerEvents

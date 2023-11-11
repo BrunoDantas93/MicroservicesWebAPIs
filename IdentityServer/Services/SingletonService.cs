@@ -1,5 +1,6 @@
 ﻿using IdentityServer.Helpers.Authentication;
 using IdentityServer.Services.Authentication;
+using MicroservicesHelpers;
 
 namespace IdentityServer.Services;
 

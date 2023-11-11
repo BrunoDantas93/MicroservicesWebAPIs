@@ -304,7 +304,8 @@
       "MicroservicesHelpers/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
-          "MongoDB.Driver": "2.22.0"
+          "MongoDB.Driver": "2.22.0",
+          "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "MicroservicesHelpers.dll": {}

@@ -1756,26 +1756,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brunodantas\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
+    "C:\\Users\\bruno\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brunodantas\\Documents\\GitHub\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
+      "projectUniqueName": "C:\\Projects\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
       "projectName": "IdentityServer",
-      "projectPath": "C:\\Users\\brunodantas\\Documents\\GitHub\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
-      "packagesPath": "C:\\Users\\brunodantas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brunodantas\\Documents\\GitHub\\MicroservicesWebAPIs\\IdentityServer\\obj\\",
+      "projectPath": "C:\\Projects\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
+      "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\MicroservicesWebAPIs\\IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\brunodantas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1784,7 +1781,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1792,8 +1788,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\brunodantas\\Documents\\GitHub\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {
-              "projectPath": "C:\\Users\\brunodantas\\Documents\\GitHub\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj"
+            "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {
+              "projectPath": "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj"
             }
           }
         }
@@ -1848,7 +1844,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

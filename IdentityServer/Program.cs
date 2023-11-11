@@ -1,12 +1,13 @@
 using IdentityServer.Services;
 using IdentityServer.Services.Authentication;
-using MicroservicesHelpers.Models.Authentication;
 using MicroservicesHelpers.Services;
-
+using MicroservicesHelpers.Models.Authentication;
+using MicroservicesHelpers;
+using MicroservicesHelpers.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<string>(builder.Configuration.GetSection("Salt"));
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 builder.Services.Configure<AuthenticationConfiguration>(builder.Configuration.GetSection("Authentication"));
 
 // Add services to the container.

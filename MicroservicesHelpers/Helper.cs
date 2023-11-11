@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace IdentityServer.Helpers
+namespace MicroservicesHelpers
 {
     public class Helper
     {

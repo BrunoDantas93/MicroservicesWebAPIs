@@ -1,4 +1,6 @@
-﻿using MicroservicesHelpers.Models.Authentication;
+﻿using MicroservicesHelpers;
+using MicroservicesHelpers.Models;
+using MicroservicesHelpers.Models.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using MongoDB.Driver.Linq;
@@ -11,16 +13,18 @@ namespace IdentityServer.Helpers.Authentication;
 public class AppAuthHelper
 {
     private readonly AuthenticationConfiguration _authConfig;
+    private readonly AppSettings _appSettings;
 
-    public AppAuthHelper(IOptions<AuthenticationConfiguration> options)
+    public AppAuthHelper(IOptions<AuthenticationConfiguration> options, IOptions<AppSettings> op)
     {
         this._authConfig = options.Value;
+        this._appSettings = op.Value;
     }
 
     public TokenDetails GenerateToken(string applicationId)
     {
         var expires = DateTime.UtcNow.AddMinutes(_authConfig.AccessTokenExpirationMinutes);
-        var token = GenerateJwtApiKey(applicationId, expires, _authConfig.AppAccessTokenSecret);
+        var token = GenerateJwtApiKey(applicationId, expires, _authConfig.AppPrivateKey);
 
         return new TokenDetails
         {
@@ -72,7 +76,7 @@ public class AppAuthHelper
     public bool ValidateAppToken(string token)
     {
         var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes(_authConfig.AppAccessTokenSecret);
+        var key = Encoding.ASCII.GetBytes(_authConfig.AppPrivateKey);
 
         try
         {

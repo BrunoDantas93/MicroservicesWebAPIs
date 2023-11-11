@@ -1,4 +1,6 @@
-﻿using MicroservicesHelpers.Models.Authentication;
+﻿using MicroservicesHelpers;
+using MicroservicesHelpers.Models;
+using MicroservicesHelpers.Models.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -10,10 +12,12 @@ namespace IdentityServer.Helpers.Authentication;
 public class UserAuthHelper
 {
     private readonly AuthenticationConfiguration _authConfig;
+    private readonly AppSettings _appSettings;
 
-    public UserAuthHelper(IOptions<AuthenticationConfiguration> options)
+    public UserAuthHelper(IOptions<AuthenticationConfiguration> options, IOptions<AppSettings> appSettings)
     {
         this._authConfig = options.Value;
+        this._appSettings = appSettings.Value;
     }
 
     public TokenDetails GenerateToken(string userId)
@@ -21,8 +25,8 @@ public class UserAuthHelper
         var accessTokenExpires = DateTime.UtcNow.AddMinutes(_authConfig.AccessTokenExpirationMinutes);
         var refreshTokenExpires = DateTime.UtcNow.AddMinutes(_authConfig.RefreshTokenExpirationMinutes);
 
-        var accessToken = GenerateJwtToken(userId, accessTokenExpires, _authConfig.UserAccessTokenSecret);
-        var refreshToken = GenerateJwtToken(userId, refreshTokenExpires, _authConfig.UserRefreshTokenSecret);
+        var accessToken = GenerateJwtToken(userId, accessTokenExpires, _authConfig.UserPrivateKey);
+        var refreshToken = GenerateJwtToken(userId, refreshTokenExpires, _authConfig.UserPrivateKey);
 
         return new TokenDetails
         {
@@ -57,8 +61,8 @@ public class UserAuthHelper
 
     public bool ValidateUserRefToken(string token)
     {
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes(_authConfig.UserRefreshTokenSecret);
+        var tokenHandler = new JwtSecurityTokenHandler();        
+        var key = Encoding.ASCII.GetBytes(_authConfig.UserPrivateKey);
 
         try
         {

@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Users/Hello",
+      "DownstreamPathTemplate": "/api/Users",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,8 +9,8 @@
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/api/Users/Hello",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/Users",
+      "UpstreamHttpMethod": [ "POST", "GET" ],
       "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],

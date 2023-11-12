@@ -1,0 +1,18 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Users",
+      "UpstreamPathTemplate": "/Users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identityserver",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST", "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "authentication"
+    }
+  ]
+}

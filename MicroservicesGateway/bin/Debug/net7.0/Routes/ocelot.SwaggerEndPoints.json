@@ -1,0 +1,26 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "authentication",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Authentication Service",
+          "Version": "1.0",
+          "Url": "https://identityserver:443/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "centrallog",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Central Log Aggregator Service",
+          "Version": "1.0",
+          "Url": "https://centrallogaggregator:443/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,6 @@ using IdentityServer.Services;
 using IdentityServer.Services.Authentication;
 using MicroservicesHelpers.Services;
 using MicroservicesHelpers.Models.Authentication;
-using MicroservicesHelpers;
 using MicroservicesHelpers.Models;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesGateway", "Mic
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralLogAggregator", "CentralLogAggregator\CentralLogAggregator.csproj", "{62DF3000-B738-4D0C-BF46-8886DB20447D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62DF3000-B738-4D0C-BF46-8886DB20447D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62DF3000-B738-4D0C-BF46-8886DB20447D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62DF3000-B738-4D0C-BF46-8886DB20447D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62DF3000-B738-4D0C-BF46-8886DB20447D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

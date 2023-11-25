@@ -1,6 +1,11 @@
-﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+﻿using Amazon.Runtime.Internal;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using System.Net.Mail;
+using System.Net;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
+using MicroservicesHelpers.Models;
 
 namespace MicroservicesHelpers
 {
@@ -97,5 +102,98 @@ namespace MicroservicesHelpers
                 }
             }
         }
+
+        /// <summary>
+        /// Validates an email address using the System.Net.Mail.MailAddress class.
+        /// </summary>
+        /// <param name="email">The email address to be validated.</param>
+        /// <returns>Returns true if the email address is valid; otherwise, returns false.</returns>
+        public static bool ValidateEmail(string email)
+        {
+            try
+            {
+                var mailAddress = new System.Net.Mail.MailAddress(email);
+
+                return true;
+            }
+            catch (FormatException)
+            {
+                // The MailAddress constructor throws FormatException if the email is not valid
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Validates a password using a regular expression pattern.
+        /// </summary>
+        /// <param name="password">The password to be validated.</param>
+        /// <returns>Returns true if the password is valid; otherwise, returns false.</returns>
+        public static bool ValidatePassword(string password)
+        {
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                // Password should not be null, empty, or contain only whitespaces
+                return false;
+            }
+
+            var passwordRegex = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\\W_])[A-Za-z0-9\\?\\W_]{8,}$");
+
+            return passwordRegex.IsMatch(password);
+        }
+
+        /// <summary>
+        /// Sends an email using the provided mail settings and parameters.
+        /// </summary>
+        /// <param name="settings">The mail settings, including host, port, mail address, and password.</param>
+        /// <param name="to">The recipient's email address.</param>
+        /// <param name="subject">The subject of the email. If null, a default subject is used.</param>
+        /// <param name="body">The body content of the email.</param>
+        public static void SendEmail(MailSettings settings, string to, string subject, string body)
+        {
+            // Create an SMTP client with the specified host, port, and credentials
+            SmtpClient smtpClient = new SmtpClient(settings.Host);
+            smtpClient.Port = settings.Port;
+            smtpClient.Credentials = new NetworkCredential(settings.Mail, settings.Password);
+            smtpClient.EnableSsl = true;
+
+            // Create the email message with the sender's mail address and the recipient's email address
+            MailMessage mailMessage = new MailMessage(settings.Mail, to);
+
+            // Set the subject and body of the email, using default values if not provided
+            mailMessage.Subject = subject != null ? subject : "Test Email";
+            mailMessage.Body = body != null ? body : "This is a test email.";
+
+            try
+            {
+                // Attempt to send the email
+                smtpClient.Send(mailMessage);
+            }
+            catch
+            {
+                // Propagate any exception that occurs during the email sending process
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Generates a random recovery code of a specified length using alphanumeric characters.
+        /// </summary>
+        /// <returns>Returns a string representing the generated recovery code.</returns>
+        public static string GenerateRecoveryCode()
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            int codeLength = 8;
+
+            // Using Random to generate a random code
+            Random random = new Random();
+
+            // Create a string by selecting random characters from the specified character set
+            string recoveryCode = new string(Enumerable.Repeat(chars, codeLength)
+                                          .Select(s => s[random.Next(s.Length)]).ToArray());
+
+            // Make sure to store this code for later verification
+            return recoveryCode;
+        }
+
     }
 }

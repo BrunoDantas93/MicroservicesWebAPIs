@@ -9,7 +9,11 @@ C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityServer.
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\AWSSDK.Core.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\DnsClient.dll
+C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityModel.dll
+C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityServer4.dll
+C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityServer4.Storage.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
@@ -81,7 +85,3 @@ C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\refint\Identity
 C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\IdentityServer.pdb
 C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\IdentityServer.genruntimeconfig.cache
 C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\ref\IdentityServer.dll
-C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityModel.dll
-C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityServer4.dll
-C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityServer4.Storage.dll
-C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll

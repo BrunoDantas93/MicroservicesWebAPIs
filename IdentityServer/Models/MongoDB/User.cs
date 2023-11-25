@@ -27,4 +27,7 @@ public class User
 
     [BsonElement("RefreshToken")]
     public List<string> RefreshToken { get; set; } = new List<string>();
+
+    [BsonElement("PasswordRecoveries")]
+    public List<PasswordRecovery> PasswordRecoveries { get; set; } = new List<PasswordRecovery>();
 }

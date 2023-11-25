@@ -16,31 +16,31 @@ public class ApplicationController : ControllerBase
         _authenticator = authenticator;
     }
 
-    [HttpPost]
-    public ActionResult Login()
-    {
-        try
-        {
-            return Ok(_authenticator.GenerateToken("Bruno"));
-        }
-        catch
-        {
-            return BadRequest();
-        }
-    }
+    //[HttpPost]
+    //public ActionResult Login()
+    //{
+    //    try
+    //    {
+    //        return Ok(_authenticator.GenerateToken("Bruno"));
+    //    }
+    //    catch
+    //    {
+    //        return BadRequest();
+    //    }
+    //}
 
-    [HttpGet]
-    [Authorize]
-    public ActionResult Logout()
-    {
-        return Ok("waddsadas");
-    }
+    //[HttpGet]
+    //[Authorize]
+    //public ActionResult Logout()
+    //{
+    //    return Ok("waddsadas");
+    //}
 
-    [HttpGet("applicationendpoint")]
-    [Authorize(Policy = "ApplicationPolicy")]
-    public IActionResult ApplicationEndpoint()
-    {
-        // Application-specific endpoint logic
-        return Ok("This is an application endpoint.");
-    }
+    //[HttpGet("applicationendpoint")]
+    //[Authorize(Policy = "ApplicationPolicy")]
+    //public IActionResult ApplicationEndpoint()
+    //{
+    //    // Application-specific endpoint logic
+    //    return Ok("This is an application endpoint.");
+    //}
 }

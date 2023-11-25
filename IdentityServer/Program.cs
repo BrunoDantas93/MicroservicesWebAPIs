@@ -3,9 +3,14 @@ using IdentityServer.Services.Authentication;
 using MicroservicesHelpers.Services;
 using MicroservicesHelpers.Models.Authentication;
 using MicroservicesHelpers.Models;
+using Serilog;
+using IdentityServer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Host.UseSerilog((context, configuration) => configuration.ReadFrom.Configuration(context.Configuration));
+
+builder.Services.Configure<ConnectionConfigurations>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 builder.Services.Configure<AuthenticationConfiguration>(builder.Configuration.GetSection("Authentication"));
 

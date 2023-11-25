@@ -4,6 +4,8 @@ services:
   centrallogaggregator:
     container_name: "CentralLogAggregator"
     build:
+      args:
+        BUILD_CONFIGURATION: Release
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "CentralLogAggregator"
@@ -28,6 +30,8 @@ services:
   identityserver:
     container_name: "IdentityServer"
     build:
+      args:
+        BUILD_CONFIGURATION: Release
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "IdentityServer"
@@ -53,6 +57,8 @@ services:
   microservicesgateway:
     container_name: "MicroservicesGateway"
     build:
+      args:
+        BUILD_CONFIGURATION: Release
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "MicroservicesGateway"

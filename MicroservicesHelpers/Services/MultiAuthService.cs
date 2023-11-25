@@ -34,7 +34,8 @@ public class MultiAuthService
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = authConfig.Issuer,
                 ValidAudience = authConfig.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.UserPrivateKey)),
+                IssuerSigningKey = GetRsaSecurityKey(),
+                //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.UserPrivateKey)),//GetRsaSecurityKey(),//new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authConfig.UserPrivateKey)),
                 NameClaimType = "user_type" // Custom claim to differentiate user token
             };
 
@@ -42,7 +43,7 @@ public class MultiAuthService
             {
                 OnMessageReceived = context =>
                 {
-                    var accessToken = context.Request.Query["access_token"];
+                    var accessToken = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
 
                     if (!string.IsNullOrEmpty(accessToken))
                     {
@@ -113,5 +114,17 @@ public class MultiAuthService
                 return JwtBearerDefaults.AuthenticationScheme;
             };
         });
+    }
+
+
+    private static RsaSecurityKey GetRsaSecurityKey()   
+    {
+        // Load the RSA public key
+        var rsa = RSA.Create();
+
+        var publicKeyText = System.IO.File.ReadAllText("../etc/RSA/PEM/public_key.pem");
+        rsa.ImportFromPem(publicKeyText);
+
+        return new RsaSecurityKey(rsa);
     }
 }

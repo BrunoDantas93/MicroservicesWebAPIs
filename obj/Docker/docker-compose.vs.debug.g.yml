@@ -5,6 +5,8 @@ services:
     image: centrallogaggregator:dev
     container_name: "CentralLogAggregator"
     build:
+      args:
+        BUILD_CONFIGURATION: Debug
       target: base
       labels:
         com.microsoft.created-by: "visual-studio"
@@ -37,6 +39,8 @@ services:
     image: identityserver:dev
     container_name: "IdentityServer"
     build:
+      args:
+        BUILD_CONFIGURATION: Debug
       target: base
       labels:
         com.microsoft.created-by: "visual-studio"
@@ -70,6 +74,8 @@ services:
     image: microservicesgateway:dev
     container_name: "MicroservicesGateway"
     build:
+      args:
+        BUILD_CONFIGURATION: Debug
       target: base
       labels:
         com.microsoft.created-by: "visual-studio"

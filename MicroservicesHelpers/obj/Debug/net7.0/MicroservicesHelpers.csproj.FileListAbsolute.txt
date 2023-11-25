@@ -30,6 +30,7 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\Microserv
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.AssemblyInfoInputs.cache
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.AssemblyInfo.cs
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.csproj.CoreCompileInputs.cache
+C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.sourcelink.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\refint\MicroservicesHelpers.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.pdb

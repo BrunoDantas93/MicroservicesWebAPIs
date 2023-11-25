@@ -17,6 +17,9 @@ services:
       - ASPNETCORE_URLS=https://+:443;http://+:80  # Specify HTTPS and HTTP URLs
     networks:
       - Microservices
+    volumes:
+      - ./etc/RSA:/etc/RSA
+      - ./etc/Logs:/etc/Logs
 
   identityserver:
     image: ${DOCKER_REGISTRY-}identityserver
@@ -30,6 +33,9 @@ services:
       - ASPNETCORE_URLS=https://+:443;http://+:80  # Specify HTTPS and HTTP URLs
     networks:
       - Microservices
+    volumes:
+      - ./etc/RSA:/etc/RSA
+      - ./etc/Logs:/etc/Logs
 
   centrallogaggregator:
     image: ${DOCKER_REGISTRY-}centrallogaggregator
@@ -43,6 +49,9 @@ services:
       - ASPNETCORE_URLS=https://+:443;http://+:80  # Specify HTTPS and HTTP URLs
     networks:
       - Microservices
+    volumes:
+      - ./etc/RSA:/etc/RSA
+      - ./etc/Logs:/etc/Logs
 
     labels:
       com.docker.compose.network: Microservices

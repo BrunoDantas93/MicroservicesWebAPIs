@@ -9,13 +9,18 @@ namespace MicroservicesHelpers;
 /// <summary>
 /// Contains enumerated types used in the Microservices application.
 /// </summary>
-internal class Enumerated
+public class Enumerated
 {
     /// <summary>
     /// Represents possible error codes for MicroservicesResponse.
     /// </summary>
-    public enum MicroservicesErrorCode
+    public enum MicroservicesCode
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        NoError = 0,
+
         /// <summary>
         /// Indicates a successful operation.
         /// </summary>
@@ -31,4 +36,17 @@ internal class Enumerated
         /// </summary>
         FatalError = 3
     }
+
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum UserType
+    {
+        Admin = 0,
+        User = 1
+    }
+
+
+
 }

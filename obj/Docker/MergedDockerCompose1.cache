@@ -4,6 +4,8 @@ services:
     build:
       context: C:\Projects\MicroservicesWebAPIs
       dockerfile: CentralLogAggregator/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: CentralLogAggregator
@@ -73,6 +75,16 @@ services:
         bind:
           create_host_path: true
       - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
+        bind:
+          create_host_path: true
+      - type: bind
         source: C:\Users\bruno\AppData\Roaming/ASP.NET/Https
         target: /home/app/.aspnet/https
         read_only: true
@@ -110,6 +122,8 @@ services:
     build:
       context: C:\Projects\MicroservicesWebAPIs
       dockerfile: IdentityServer/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: IdentityServer
@@ -176,6 +190,16 @@ services:
         bind:
           create_host_path: true
       - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
+        bind:
+          create_host_path: true
+      - type: bind
         source: C:\Users\bruno\AppData\Roaming/ASP.NET/Https
         target: /home/app/.aspnet/https
         read_only: true
@@ -213,6 +237,8 @@ services:
     build:
       context: C:\Projects\MicroservicesWebAPIs
       dockerfile: MicroservicesGateway/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: MicroservicesGateway
@@ -276,6 +302,16 @@ services:
       - type: bind
         source: C:\Projects\MicroservicesWebAPIs\MicroservicesGateway
         target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
         bind:
           create_host_path: true
       - type: bind

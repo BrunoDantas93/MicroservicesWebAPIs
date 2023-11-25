@@ -1,6 +1,7 @@
 ﻿using IdentityServer.Helpers.Authentication;
 using IdentityServer.Services.Authentication;
-using MicroservicesHelpers;
+using MicroservicesHelpers.Models;
+using MicroservicesHelpers.Services;
 
 namespace IdentityServer.Services;
 
@@ -11,5 +12,7 @@ public class SingletonService
         //Helpers
         builder.Services.AddSingleton<UserAuthHelper>();
         builder.Services.AddSingleton<AppAuthHelper>();
+
+        builder.Services.AddSingleton<UserService>();
     }
 }

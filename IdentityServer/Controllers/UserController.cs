@@ -2,18 +2,15 @@
 using IdentityServer.Models.MongoDB;
 using IdentityServer.Models.Requests.User;
 using IdentityServer.Services;
-using Microsoft.AspNetCore.Mvc;
 using MicroservicesHelpers;
 using MicroservicesHelpers.Models;
-using static MicroservicesHelpers.Enumerated;
 using MicroservicesHelpers.Models.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.IdentityModel.Tokens.Jwt;
-using static IdentityServer4.Models.IdentityResources;
-using System.Text.RegularExpressions;
-using Amazon.Runtime.Internal;
+using System.Security.Claims;
+using static MicroservicesHelpers.Enumerated;
 
 namespace IdentityServer.Controllers;
 
@@ -75,7 +72,7 @@ public class UserController : ControllerBase
             if (!Helper.ValidateEmail(request.email))
                 return BadRequest(new MicroservicesResponse(MicroservicesCode.Validation, "Erro ao registrar", "O email fornecido não é válido.", null));
 
-           if (!Helper.ValidatePassword(request.password))
+            if (!Helper.ValidatePassword(request.password))
                 return BadRequest(new MicroservicesResponse(MicroservicesCode.Validation, "Erro ao registrar", "A senha fornecida não atende aos requisitos mínimos.", null));
 
             // Check if the requested username already exists
@@ -265,12 +262,14 @@ public class UserController : ControllerBase
             if (user == null)
                 return BadRequest(new MicroservicesResponse(MicroservicesCode.Validation, "Utilizador não encontrado", "O utilizador com o ID especificado não foi encontrado.", null));
 
-
             // Generate a new access token for the user
             TokenDetails token = _authenticator.GenerateToken(user);
 
             // Delete the used refresh token
             await _usersService.DeleteRefreshToken(userIDClaim.Value, refreshToken);
+
+            // Save the refresh token for the user
+            await _usersService.SaveRefreshToken(user.Id, token.RefreshToken);
 
             // Return an Ok response with the new access token
             return Ok(token);

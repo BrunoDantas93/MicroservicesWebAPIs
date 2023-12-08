@@ -1,22 +1,20 @@
 ﻿using MicroservicesHelpers.Models.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
 using System.IdentityModel.Tokens.Jwt;
-using System.Text;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-using MicroservicesHelpers;
 using System.Security.Cryptography;
-using MicroservicesHelpers.Models;
+using System.Text;
 
 namespace IdentityServer.Services.Authentication;
 
 public class MultiAuthService
 {
     public static void Authentication(WebApplicationBuilder builder)
-    {         
+    {
         AuthenticationConfiguration authConfig = builder.Configuration.GetSection("Authentication").Get<AuthenticationConfiguration>();
 
         builder.Services.AddAuthentication(options =>
@@ -117,7 +115,7 @@ public class MultiAuthService
     }
 
 
-    private static RsaSecurityKey GetRsaSecurityKey()   
+    private static RsaSecurityKey GetRsaSecurityKey()
     {
         // Load the RSA public key
         var rsa = RSA.Create();

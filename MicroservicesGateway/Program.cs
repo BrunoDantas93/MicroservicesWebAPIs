@@ -1,10 +1,8 @@
+using MicroservicesGateway.Helpers;
+using MicroservicesHelpers.Services;
 using MMLib.SwaggerForOcelot.DependencyInjection;
-using Newtonsoft.Json.Linq;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-using MicroservicesHelpers.Services;
-using Ocelot.Values;
-using MicroservicesGateway.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,9 +1,7 @@
-﻿using MicroservicesHelpers;
-using MicroservicesHelpers.Models;
+﻿using MicroservicesHelpers.Models;
 using MicroservicesHelpers.Models.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using MongoDB.Driver.Linq;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;

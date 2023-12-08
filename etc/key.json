@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1014251713764",
+    "project_id": "microserviceswebapis",
+    "storage_bucket": "microserviceswebapis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014251713764:android:f42b22d213f8cb5361e8f1",
+        "android_client_info": {
+          "package_name": "MicroservicesWebAPIs.V1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKB1gU7OJYhIHq-sZk2enNJvpS_jX3PDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

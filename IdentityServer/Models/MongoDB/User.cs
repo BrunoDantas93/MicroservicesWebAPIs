@@ -1,6 +1,6 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MicroservicesHelpers;
 using MongoDB.Bson;
-using MicroservicesHelpers;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace IdentityServer.Models.MongoDB;
 

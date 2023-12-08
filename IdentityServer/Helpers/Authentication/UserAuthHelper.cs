@@ -1,10 +1,8 @@
 ﻿using IdentityServer.Models.MongoDB;
-using MicroservicesHelpers;
 using MicroservicesHelpers.Models;
 using MicroservicesHelpers.Models.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -64,12 +62,12 @@ public class UserAuthHelper
         return token;
     }
 
-    
+
     private RsaSecurityKey GetRsaSecurityKey()
     {
         // Load the RSA public key
         var rsa = RSA.Create();
-            
+
         var publicKeyText = File.ReadAllText("private_key.pem");
         rsa.ImportFromPem(publicKeyText);
 

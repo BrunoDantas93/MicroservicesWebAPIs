@@ -1,0 +1,32 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Events/",
+      "UpstreamPathTemplate": "/Events/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "eventsapi",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "eventsapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Events/{everything}",
+      "UpstreamPathTemplate": "/Events/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "eventsapi",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "eventsapi"
+    }
+  ]
+}

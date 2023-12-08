@@ -1,10 +1,10 @@
+using IdentityServer.Models;
 using IdentityServer.Services;
 using IdentityServer.Services.Authentication;
-using MicroservicesHelpers.Services;
-using MicroservicesHelpers.Models.Authentication;
 using MicroservicesHelpers.Models;
+using MicroservicesHelpers.Models.Authentication;
+using MicroservicesHelpers.Services;
 using Serilog;
-using IdentityServer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

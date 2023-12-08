@@ -3,6 +3,8 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\appsettin
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\ocelot.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.authentication.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.centrallogaggregator.json
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.events.json
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.eventstype.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.global.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.SwaggerEndPoints.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\MicroservicesGateway.exe
@@ -15,7 +17,14 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\AWSSDK.Se
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Azure.Core.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Azure.Identity.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\DnsClient.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\FirebaseAdmin.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\FluentValidation.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Api.Gax.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Api.Gax.Rest.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Apis.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Apis.Auth.PlatformServices.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Apis.Auth.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Apis.Core.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\IPAddressRange.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Kros.Utils.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -71,10 +80,12 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Snappier.
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.CodeDom.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.Management.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.Memory.Data.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.Runtime.Caching.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
@@ -95,6 +106,7 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Management.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll

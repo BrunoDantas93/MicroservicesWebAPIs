@@ -1,7 +1,4 @@
 ﻿using IdentityServer.Helpers.Authentication;
-using IdentityServer.Services.Authentication;
-using MicroservicesHelpers.Models;
-using MicroservicesHelpers.Services;
 
 namespace IdentityServer.Services;
 

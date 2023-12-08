@@ -1,15 +1,15 @@
-﻿using Amazon.Runtime.Internal;
+﻿using MicroservicesHelpers.Models;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
-using System.Net.Mail;
+using System.ComponentModel;
 using System.Net;
+using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using MicroservicesHelpers.Models;
 
 namespace MicroservicesHelpers
 {
-    public class Helper
+    public static class Helper
     {
         /// <summary>
         /// This method is used to generate a random salt
@@ -194,6 +194,32 @@ namespace MicroservicesHelpers
             // Make sure to store this code for later verification
             return recoveryCode;
         }
+
+        /// <summary>
+        /// Gets the description associated with an enum value, if available.
+        /// </summary>
+        /// <param name="value">The enum value.</param>
+        /// <returns>The description of the enum value, or the enum value's string representation if no description is available.</returns>
+        public static string GetDescription(this Enum value)
+        {
+            try
+            {
+                // Get the field information for the enum value
+                var field = value.GetType().GetField(value.ToString());
+
+                // Get the DescriptionAttribute associated with the enum value, if any
+                var attribute = (DescriptionAttribute)Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute));
+
+                // Return the description if available, otherwise return the enum value's string representation
+                return attribute == null ? value.ToString() : attribute.Description;
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception as needed (e.g., log it, rethrow it, or return a default value)
+                throw new Exception($"An error occurred while getting the description: {ex.Message}");
+            }
+        }
+
 
     }
 }

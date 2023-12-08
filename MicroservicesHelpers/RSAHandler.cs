@@ -1,6 +1,4 @@
-﻿
-using Microsoft.AspNetCore.SignalR.Protocol;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 
 namespace MicroservicesHelpers;

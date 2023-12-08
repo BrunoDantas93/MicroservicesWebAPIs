@@ -6,8 +6,30 @@
       "Config": [
         {
           "Name": "Authentication Service",
-          "Version": "1.0",
+          "Version": "2.0",
           "Url": "https://identityserver:443/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "eventsapi",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Events API",
+          "Version": "1.0",
+          "Url": "https://eventsapi:443/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "eventstypeapi",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Events Type API",
+          "Version": "1.0",
+          "Url": "https://eventsapi:443/swagger/v1/swagger.json"
         }
       ]
     },

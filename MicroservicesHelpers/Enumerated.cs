@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MicroservicesHelpers;
+﻿namespace MicroservicesHelpers;
 
 /// <summary>
 /// Contains enumerated types used in the Microservices application.

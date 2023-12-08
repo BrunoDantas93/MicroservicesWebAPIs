@@ -78,7 +78,7 @@ public class UserService
     public async Task<bool> GetUsername(string username)
     {
         User User = await _usersCollection.Find<User>(user => user.Username.ToLower() == username.ToLower()).FirstOrDefaultAsync();
-        
+
         // If no user is found, return false; otherwise, return true
         return User != null;
     }

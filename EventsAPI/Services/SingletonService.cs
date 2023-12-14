@@ -8,6 +8,7 @@ public class SingletonService
     {
         builder.Services.AddSingleton<EventsTypeService>();
         builder.Services.AddSingleton<EventsService>();
-        //builder.Services.AddSingleton<FirebasePushNotificationService>();
+        builder.Services.AddSingleton<FirebasePushNotificationService>();
+        builder.Services.AddSingleton<InstagramServices>();
     }
 }

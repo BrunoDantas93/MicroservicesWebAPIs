@@ -135,3 +135,5 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\refint\Mi
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\MicroservicesGateway.pdb
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\MicroservicesGateway.genruntimeconfig.cache
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\ref\MicroservicesGateway.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\InstagramApiSharp.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\BouncyCastle.Crypto.dll

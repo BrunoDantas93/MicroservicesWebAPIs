@@ -207,6 +207,20 @@
           }
         }
       },
+      "InstagramApiSharp/1.7.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "Portable.BouncyCastle": "1.8.6.7"
+        },
+        "compile": {
+          "lib/netstandard2.0/InstagramApiSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/InstagramApiSharp.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -275,7 +289,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -766,6 +780,19 @@
           }
         }
       },
+      "Portable.BouncyCastle/1.8.6.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Serilog/3.1.1": {
         "type": "package",
         "compile": {
@@ -1248,6 +1275,7 @@
         "dependencies": {
           "FirebaseAdmin": "2.4.0",
           "Google.Apis.Auth": "1.64.0",
+          "InstagramApiSharp": "1.7.4",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
           "MongoDB.Driver": "2.22.0",
           "Newtonsoft.Json": "13.0.3",
@@ -1518,6 +1546,23 @@
         "lib/netstandard2.0/IdentityServer4.Storage.xml"
       ]
     },
+    "InstagramApiSharp/1.7.4": {
+      "sha512": "a9R2pxWdKsWFwAOZg0oWArpT34F/UJp04h9mYG3F9tJVw7/qucztkqqyyyqjHWrrsVq1gGKrkAOYOJqZQ+YjZA==",
+      "type": "package",
+      "path": "instagramapisharp/1.7.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "insta.png",
+        "instagramapisharp.1.7.4.nupkg.sha512",
+        "instagramapisharp.nuspec",
+        "lib/net461/InstagramApiSharp.dll",
+        "lib/netstandard2.0/InstagramApiSharp.dll",
+        "lib/uap10.0.16299/InstagramApiSharp.dll",
+        "lib/uap10.0.16299/InstagramApiSharp.pri"
+      ]
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.13": {
       "sha512": "h1B5heq5d7vRC/0CuXlcvNpKzIgZi11b9iURRBDAOSigWXTZlq62Tzix+zyIvOx5xeydE/tniTNSaqeJBQNB3Q==",
       "type": "package",
@@ -1586,10 +1631,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1602,6 +1647,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1611,7 +1657,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -2692,6 +2738,21 @@
         "packageIcon.png"
       ]
     },
+    "Portable.BouncyCastle/1.8.6.7": {
+      "sha512": "RBCAkzkBkur4w1YXFpwVdYvdm4ez7PUNyl5DsqPKDe0QSoH9xt6Mwzy1NSFSrrw4T7bCkxi06nSHCuBEuMEgfw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.8.6.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.8.6.7.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
+      ]
+    },
     "Serilog/3.1.1": {
       "sha512": "P6G4/4Kt9bT635bhuwdXlJ2SCqqn2nhh4gqFqQueCOr9bK/e7W9ll/IoX1Ter948cV2Z/5+5v8pAfJYUISY03A==",
       "type": "package",
@@ -3554,6 +3615,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "IdentityServer4 >= 4.1.2",
+      "InstagramApiSharp >= 1.7.4",
       "MicroservicesHelpers >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.13",
       "Microsoft.AspNetCore.OpenApi >= 7.0.10",
@@ -3610,6 +3672,10 @@
           "IdentityServer4": {
             "target": "Package",
             "version": "[4.1.2, )"
+          },
+          "InstagramApiSharp": {
+            "target": "Package",
+            "version": "[1.7.4, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",

@@ -1,4 +1,4 @@
-﻿namespace EventsAPI.Models;
+﻿namespace UserDetailsAPI.Models;
 
 public class ConnectionConfigurations
 {

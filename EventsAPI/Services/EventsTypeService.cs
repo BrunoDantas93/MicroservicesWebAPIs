@@ -3,6 +3,7 @@ using EventsAPI.Models;
 using EventsAPI.Models.MongoDB;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using UserDetailsAPI.Models;
 
 namespace EventsAPI.Services;
 

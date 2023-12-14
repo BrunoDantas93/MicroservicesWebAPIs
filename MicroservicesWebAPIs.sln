@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroservicesGateway", "Mic
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E106A549-5A70-4AE1-8CF7-3B1DCB2D89FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAPI", "EventsAPI\EventsAPI.csproj", "{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsAPI", "EventsAPI\EventsAPI.csproj", "{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserDetailsAPI", "UserDetailsAPI\UserDetailsAPI.csproj", "{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogProcessorAPI", "LogProcessorAPI\LogProcessorAPI.csproj", "{46331165-F4DA-42FE-BE6D-A6BC376A1A48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46331165-F4DA-42FE-BE6D-A6BC376A1A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46331165-F4DA-42FE-BE6D-A6BC376A1A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46331165-F4DA-42FE-BE6D-A6BC376A1A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46331165-F4DA-42FE-BE6D-A6BC376A1A48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

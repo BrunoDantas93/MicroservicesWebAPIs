@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "REK8UX3ACnQcfIjIrs6NuSr/z6INrg8aFCuxNQh4Fg9QpnBO92Tm5ox5lMoTGeT3se3WnHdReUstkMx4I4pzUw==",
+  "dgSpecHash": "u/28WVj3qc5159xe64Ig5PBuDZLYK2T1qhFOPonrTzUolHSzlJUsHfo3kCaoqvPUpH/1v8ci4NhmLU8ZPotV9A==",
   "success": true,
   "projectFilePath": "C:\\Projects\\MicroservicesWebAPIs\\EventsAPI\\EventsAPI.csproj",
   "expectedPackageFiles": [
@@ -13,10 +13,11 @@
     "C:\\Users\\bruno\\.nuget\\packages\\google.apis\\1.64.0\\google.apis.1.64.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\google.apis.auth\\1.64.0\\google.apis.auth.1.64.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\google.apis.core\\1.64.0\\google.apis.core.1.64.0.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\instagramapisharp\\1.7.4\\instagramapisharp.1.7.4.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.13\\microsoft.aspnetcore.authentication.jwtbearer.7.0.13.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
-    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
@@ -44,6 +45,7 @@
     "C:\\Users\\bruno\\.nuget\\packages\\mongodb.driver.core\\2.22.0\\mongodb.driver.core.2.22.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\portable.bouncycastle\\1.8.6.7\\portable.bouncycastle.1.8.6.7.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\serilog.aspnetcore\\8.0.0\\serilog.aspnetcore.8.0.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",

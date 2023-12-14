@@ -86,3 +86,10 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\MicroservicesGateway.exe
 C:\Projects\MicroservicesWebAPIs\bin\Debug\private_key.pem
 C:\Projects\MicroservicesWebAPIs\bin\Debug\EventsAPI.pdb
 C:\Projects\MicroservicesWebAPIs\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Projects\MicroservicesWebAPIs\bin\Debug\InstagramApiSharp.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\BouncyCastle.Crypto.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.deps.json
+C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.runtimeconfig.json
+C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.exe
+C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.pdb

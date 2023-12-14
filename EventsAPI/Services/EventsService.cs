@@ -4,6 +4,7 @@ using EventsAPI.Models.MongoDB;
 using Google.Apis.Logging;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using UserDetailsAPI.Models;
 
 namespace EventsAPI.Services;
 

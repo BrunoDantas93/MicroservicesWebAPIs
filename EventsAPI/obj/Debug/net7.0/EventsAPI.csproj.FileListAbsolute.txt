@@ -91,3 +91,5 @@ C:\Projects\MicroservicesWebAPIs\EventsAPI\obj\Debug\net7.0\refint\EventsAPI.dll
 C:\Projects\MicroservicesWebAPIs\EventsAPI\obj\Debug\net7.0\EventsAPI.pdb
 C:\Projects\MicroservicesWebAPIs\EventsAPI\obj\Debug\net7.0\EventsAPI.genruntimeconfig.cache
 C:\Projects\MicroservicesWebAPIs\EventsAPI\obj\Debug\net7.0\ref\EventsAPI.dll
+C:\Projects\MicroservicesWebAPIs\EventsAPI\bin\Debug\net7.0\InstagramApiSharp.dll
+C:\Projects\MicroservicesWebAPIs\EventsAPI\bin\Debug\net7.0\BouncyCastle.Crypto.dll

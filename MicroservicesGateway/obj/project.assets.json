@@ -208,6 +208,20 @@
           }
         }
       },
+      "InstagramApiSharp/1.7.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "Portable.BouncyCastle": "1.8.6.7"
+        },
+        "compile": {
+          "lib/netstandard2.0/InstagramApiSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/InstagramApiSharp.dll": {}
+        }
+      },
       "IPAddressRange/6.0.0": {
         "type": "package",
         "compile": {
@@ -1097,6 +1111,19 @@
         },
         "runtime": {
           "lib/net7.0/Ocelot.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Portable.BouncyCastle/1.8.6.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
             "related": ".xml"
           }
         }
@@ -2542,6 +2569,7 @@
         "dependencies": {
           "FirebaseAdmin": "2.4.0",
           "Google.Apis.Auth": "1.64.0",
+          "InstagramApiSharp": "1.7.4",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
           "MongoDB.Driver": "2.22.0",
           "Newtonsoft.Json": "13.0.3",
@@ -2820,6 +2848,23 @@
         "lib/netstandard2.0/Google.Apis.Core.dll",
         "lib/netstandard2.0/Google.Apis.Core.pdb",
         "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "InstagramApiSharp/1.7.4": {
+      "sha512": "a9R2pxWdKsWFwAOZg0oWArpT34F/UJp04h9mYG3F9tJVw7/qucztkqqyyyqjHWrrsVq1gGKrkAOYOJqZQ+YjZA==",
+      "type": "package",
+      "path": "instagramapisharp/1.7.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "insta.png",
+        "instagramapisharp.1.7.4.nupkg.sha512",
+        "instagramapisharp.nuspec",
+        "lib/net461/InstagramApiSharp.dll",
+        "lib/netstandard2.0/InstagramApiSharp.dll",
+        "lib/uap10.0.16299/InstagramApiSharp.dll",
+        "lib/uap10.0.16299/InstagramApiSharp.pri"
       ]
     },
     "IPAddressRange/6.0.0": {
@@ -4405,6 +4450,21 @@
         "lib/net7.0/Ocelot.xml",
         "ocelot.20.0.0.nupkg.sha512",
         "ocelot.nuspec"
+      ]
+    },
+    "Portable.BouncyCastle/1.8.6.7": {
+      "sha512": "RBCAkzkBkur4w1YXFpwVdYvdm4ez7PUNyl5DsqPKDe0QSoH9xt6Mwzy1NSFSrrw4T7bCkxi06nSHCuBEuMEgfw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.8.6.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.8.6.7.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -7594,6 +7654,7 @@
     "net7.0": [
       "FirebaseAdmin >= 2.4.0",
       "Google.Apis.Auth >= 1.64.0",
+      "InstagramApiSharp >= 1.7.4",
       "MMLib.SwaggerForOcelot >= 7.0.1",
       "MicroservicesHelpers >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.13",
@@ -7654,6 +7715,10 @@
           "Google.Apis.Auth": {
             "target": "Package",
             "version": "[1.64.0, )"
+          },
+          "InstagramApiSharp": {
+            "target": "Package",
+            "version": "[1.7.4, )"
           },
           "MMLib.SwaggerForOcelot": {
             "target": "Package",

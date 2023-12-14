@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[1.64.0, )"
             },
+            "InstagramApiSharp": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.13, )"
@@ -131,6 +135,10 @@
             "Google.Apis.Auth": {
               "target": "Package",
               "version": "[1.64.0, )"
+            },
+            "InstagramApiSharp": {
+              "target": "Package",
+              "version": "[1.7.4, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

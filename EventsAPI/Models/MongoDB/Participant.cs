@@ -22,7 +22,7 @@ public class Participant
     [BsonElement("DtType")]
     public DateTime DtType { get; set; }
     
-    [BsonElement("ParticipantID")]
+    [BsonElement("Status")]
     public ParticipantStatus Status { get; set; }
 
     [BsonElement("DtStatus")]

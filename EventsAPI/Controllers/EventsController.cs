@@ -3,9 +3,11 @@ using EventsAPI.Models.Requests;
 using EventsAPI.Services;
 using MicroservicesHelpers;
 using MicroservicesHelpers.Models;
+using MicroservicesHelpers.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 using System.Security.Claims;
 using static EventsAPI.Helpers.Enumerated;
 using static MicroservicesHelpers.Enumerated;
@@ -21,14 +23,18 @@ public class EventsController : ControllerBase
     private readonly EventsTypeService _eventsTypeService;
     private readonly EventsService _eventService;
     private readonly MailSettings _mailSettings;
+    private readonly FirebasePushNotificationService _firebasePushNotificationService;
+    private readonly InstagramServices _instagramServices;
 
 
-    public EventsController(ILogger<EventsController> logger, EventsTypeService eventsType, EventsService eventService, IOptions<MailSettings> mailSettings)
+    public EventsController(ILogger<EventsController> logger, EventsTypeService eventsType, EventsService eventService, IOptions<MailSettings> mailSettings, FirebasePushNotificationService firebasePushNotificationService, InstagramServices instagramServices)
     {
         _logger = logger;
         _eventsTypeService = eventsType;
         _eventService = eventService;
         _mailSettings = mailSettings.Value;
+        _firebasePushNotificationService = firebasePushNotificationService;
+        _instagramServices = instagramServices;
     }
 
 
@@ -289,10 +295,14 @@ public class EventsController : ControllerBase
                 }
                 else
                 {
-                    // Handle tokens or other cases if needed
+                    foreach (string token in participant.ParticipantTokens)
+                    {
+                        _firebasePushNotificationService.SendPushNotificationAsync(token, participant.Title, participant.Body);
+                    }
                 }
 
                 Participant p = new Participant();
+                p.Id = ObjectId.GenerateNewId().ToString();
                 p.Codigo = codigo;
                 p.Type = type;
                 p.DtType = DateTime.Now;
@@ -384,6 +394,7 @@ public class EventsController : ControllerBase
                 {
                     // Create a new participant if not found
                     p = new Participant();
+                    p.Id = ObjectId.GenerateNewId().ToString();
                     p.Status = participantStatus.Status;
                     p.DtStatus = DateTime.Now;
                     p.ParticipantID = userId;
@@ -414,6 +425,50 @@ public class EventsController : ControllerBase
             return BadRequest(new MicroservicesResponse(MicroservicesCode.FatalError, "Erro Fatal", "Ocorreu um erro durante a atualização do status do participante.", ex.Message));
         }
     }
+
+
+    [HttpPost("post/image")]
+    public async Task<IActionResult> PostImage([FromForm] InstagramPostImageRequest postModel, [FromForm] IFormFile imageFile)
+    {
+        if (imageFile == null || imageFile.Length == 0)
+        {
+            return BadRequest(new { Message = "Nenhum arquivo de imagem fornecido" });
+        }
+
+        using (var stream = new MemoryStream())
+        {
+            //await postModel.ImageFile.CopyToAsync(stream);
+            //var imagePath = "temp_image.jpg"; // Pode ajustar o nome e caminho conforme necessário
+            //System.IO.File.WriteAllBytes(imagePath, stream.ToArray());
+
+            bool isLogin = await _instagramServices.Login(postModel.Username, postModel.Password);
+
+            if (isLogin)
+            {
+                if (await _instagramServices.PostImage(imageFile, postModel.Caption))
+                {
+                    return Ok(new { Message = "Imagem postada com sucesso" });
+                }
+
+                return BadRequest(new { Message = "Falha ao postar imagem" });
+            }
+
+            return BadRequest(new { Message = "Falha no login" });
+
+            //if (await _instagramManager.PostImage(imagePath, postModel.Caption))
+            //{
+            //    return Ok(new { Message = "Imagem postada com sucesso" });
+            //}
+
+            //return BadRequest(new { Message = "Falha ao postar imagem" });
+        }
+
+        
+
+         
+    }
+
+
 
     //Get /States
     /// <summary>

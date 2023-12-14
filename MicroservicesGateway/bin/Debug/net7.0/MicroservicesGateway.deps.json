@@ -10,6 +10,7 @@
         "dependencies": {
           "FirebaseAdmin": "2.4.0",
           "Google.Apis.Auth": "1.64.0",
+          "InstagramApiSharp": "1.7.4",
           "MMLib.SwaggerForOcelot": "7.0.1",
           "MicroservicesHelpers": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.13",
@@ -168,6 +169,19 @@
           "lib/netstandard2.0/Google.Apis.Core.dll": {
             "assemblyVersion": "1.64.0.0",
             "fileVersion": "1.64.0.0"
+          }
+        }
+      },
+      "InstagramApiSharp/1.7.4": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.3",
+          "Portable.BouncyCastle": "1.8.6.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/InstagramApiSharp.dll": {
+            "assemblyVersion": "1.7.4.0",
+            "fileVersion": "1.7.4.0"
           }
         }
       },
@@ -731,6 +745,14 @@
           "lib/net7.0/Ocelot.dll": {
             "assemblyVersion": "20.0.0.0",
             "fileVersion": "20.0.0.0"
+          }
+        }
+      },
+      "Portable.BouncyCastle/1.8.6.7": {
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.6.0",
+            "fileVersion": "1.8.6.7"
           }
         }
       },
@@ -1486,6 +1508,7 @@
         "dependencies": {
           "FirebaseAdmin": "2.4.0",
           "Google.Apis.Auth": "1.64.0",
+          "InstagramApiSharp": "1.7.4",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
           "MongoDB.Driver": "2.22.0",
           "Newtonsoft.Json": "13.0.3",
@@ -1587,6 +1610,13 @@
       "sha512": "sha512-bqrUhDeMFeMdjtv4QT4Z99WDPSEbS6EKnp1bYvqyc/VpEu4oFNMqw8/bk/7SS7Ko+bodDgum8fkvDwCMZtdWDg==",
       "path": "google.apis.core/1.64.0",
       "hashPath": "google.apis.core.1.64.0.nupkg.sha512"
+    },
+    "InstagramApiSharp/1.7.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a9R2pxWdKsWFwAOZg0oWArpT34F/UJp04h9mYG3F9tJVw7/qucztkqqyyyqjHWrrsVq1gGKrkAOYOJqZQ+YjZA==",
+      "path": "instagramapisharp/1.7.4",
+      "hashPath": "instagramapisharp.1.7.4.nupkg.sha512"
     },
     "IPAddressRange/6.0.0": {
       "type": "package",
@@ -1937,6 +1967,13 @@
       "sha512": "sha512-cvk2vti1hILD2MeEWuxWUxp5tx9Bx8y4YZa6lOc6T+Y5GXbkWsO6og7F+8MIolp140TKLyvsAim1XYirPdN3dw==",
       "path": "ocelot/20.0.0",
       "hashPath": "ocelot.20.0.0.nupkg.sha512"
+    },
+    "Portable.BouncyCastle/1.8.6.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RBCAkzkBkur4w1YXFpwVdYvdm4ez7PUNyl5DsqPKDe0QSoH9xt6Mwzy1NSFSrrw4T7bCkxi06nSHCuBEuMEgfw==",
+      "path": "portable.bouncycastle/1.8.6.7",
+      "hashPath": "portable.bouncycastle.1.8.6.7.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

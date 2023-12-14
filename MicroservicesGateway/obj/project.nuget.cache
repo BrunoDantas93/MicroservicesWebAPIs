@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DXVWd3ZLmThKFsn7hSL7GPwr5hOv9Rw0VrHFu18I5u76FGf/qIaSQd0waZIK/zba0UBJaQuNNi3vaY7q83TOyQ==",
+  "dgSpecHash": "d3enDvGZUvVc11vbkVSTGZHoVkGiFiV6NXQ6hQHFmGNILPiaqZGqKa8V7OfsCZkeodLQRkleqA3gSXmSt34jLw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesGateway\\MicroservicesGateway.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\bruno\\.nuget\\packages\\google.apis\\1.64.0\\google.apis.1.64.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\google.apis.auth\\1.64.0\\google.apis.auth.1.64.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\google.apis.core\\1.64.0\\google.apis.core.1.64.0.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\instagramapisharp\\1.7.4\\instagramapisharp.1.7.4.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\kros.utils\\2.1.0\\kros.utils.2.1.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.13\\microsoft.aspnetcore.authentication.jwtbearer.7.0.13.nupkg.sha512",
@@ -66,6 +67,7 @@
     "C:\\Users\\bruno\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\ocelot\\20.0.0\\ocelot.20.0.0.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\portable.bouncycastle\\1.8.6.7\\portable.bouncycastle.1.8.6.7.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

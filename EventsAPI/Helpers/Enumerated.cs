@@ -7,16 +7,16 @@ public class Enumerated
     public enum EventState
     {
         [Description("Cancelado por Circunstâncias Imprevistas")]
-        CanceladoCircunstanciasImprevistas,
+        CanceladoCircunstanciasImprevistas = 0,
 
         [Description("Adiado para Data Futura")]
-        AdiadoParaDataFutura,
+        AdiadoParaDataFutura = 1,
 
         [Description("Cancelado por Restrições de Saúde")]
-        CanceladoRestricoesSaude,
+        CanceladoRestricoesSaude = 2,
 
         [Description("Alteração de Local")]
-        AlteracaoLocal,
+        AlteracaoLocal = 3,
 
         [Description("Cancelado por Condições Meteorológicas")]
         CanceladoCondicoesMeteorologicas,
@@ -91,22 +91,22 @@ public class Enumerated
     public enum ParticipantStatus
     {
         [Description("Não Confirmado")]
-        NaoConfirmado,
+        NaoConfirmado = 0,
 
         [Description("Confirmado")]
-        Confirmado,
+        Confirmado = 1,
         
         [Description("Interessado")]
-        Interessado,
+        Interessado = 2,
         
         [Description("Desinteressado")]
-        Desinteressado,
+        Desinteressado = 3,
         
         [Description("Vai Participar")]
-        VaiParticipar,
+        VaiParticipar = 4,
         
         [Description("Não Vai Participar")]
-        NãoVaiParticipar
+        NãoVaiParticipar = 5
     }
 
     public enum ParticipantType

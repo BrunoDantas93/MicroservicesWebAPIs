@@ -1,9 +1,9 @@
-using EventsAPI.Models;
 using EventsAPI.Services;
 using IdentityServer.Services.Authentication;
 using MicroservicesHelpers.Models;
 using MicroservicesHelpers.Models.Authentication;
 using MicroservicesHelpers.Services;
+using UserDetailsAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -14,7 +14,7 @@ public class FirebasePushNotificationService
         {
             FirebaseApp.Create(new AppOptions()
             {
-                Credential = GoogleCredential.FromFile("../etc/key.json"),
+                Credential = GoogleCredential.FromFile("../etc/firebase/firebase.json"),
             });
 
             _firebaseMessaging = FirebaseMessaging.DefaultInstance;

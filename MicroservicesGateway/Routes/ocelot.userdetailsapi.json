@@ -1,0 +1,32 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/UserDetails/",
+      "UpstreamPathTemplate": "/UserDetails/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "userdetailsapi",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "userdetailsapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserDetails/{everything}",
+      "UpstreamPathTemplate": "/UserDetails/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "userdetailsapi",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "userdetailsapi"
+    }
+  ]
+}

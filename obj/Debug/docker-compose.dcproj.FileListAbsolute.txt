@@ -93,3 +93,4 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.deps.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.runtimeconfig.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.exe
 C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.pdb
+C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.userdetailsapi.json

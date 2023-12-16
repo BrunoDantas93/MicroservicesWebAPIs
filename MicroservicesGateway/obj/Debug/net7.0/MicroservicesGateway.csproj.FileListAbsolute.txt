@@ -137,3 +137,4 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\Microserv
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\ref\MicroservicesGateway.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\InstagramApiSharp.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\BouncyCastle.Crypto.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.userdetailsapi.json

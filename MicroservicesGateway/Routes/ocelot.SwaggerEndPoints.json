@@ -23,6 +23,17 @@
       ]
     },
     {
+      "Key": "userdetailsapi",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "User Details API",
+          "Version": "1.0",
+          "Url": "https://userdetailsapi:443/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
       "Key": "eventstypeapi",
       "TransformByOcelotConfig": true,
       "Config": [

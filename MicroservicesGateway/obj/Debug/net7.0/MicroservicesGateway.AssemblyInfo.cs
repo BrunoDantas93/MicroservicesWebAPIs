@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroservicesGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f01730abd3da6d87895ab6dcf4cc16a4a6305a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63d742060b7e96c2ad0583900dbceaa7b701b6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroservicesGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroservicesGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

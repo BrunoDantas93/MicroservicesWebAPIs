@@ -77,7 +77,6 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\MicroservicesGateway.deps.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\MicroservicesGateway.runtimeconfig.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\ocelot.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.authentication.json
-C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.centrallogaggregator.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.events.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.eventstype.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.global.json
@@ -94,3 +93,9 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.runtimeconfig.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.exe
 C:\Projects\MicroservicesWebAPIs\bin\Debug\UserDetailsAPI.pdb
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.userdetailsapi.json
+C:\Projects\MicroservicesWebAPIs\bin\Debug\LogProcessorAPI.deps.json
+C:\Projects\MicroservicesWebAPIs\bin\Debug\LogProcessorAPI.runtimeconfig.json
+C:\Projects\MicroservicesWebAPIs\bin\Debug\LogProcessorAPI.exe
+C:\Projects\MicroservicesWebAPIs\bin\Debug\LogProcessorAPI.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\LogProcessorAPI.pdb
+C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.LogProcessorAPI.json

@@ -25,14 +25,14 @@ builder.Services.AddCors(options =>
 });
 
 // Add services to the container.
-//MultiAuthService.Authentication(builder);
+MultiAuthService.Authentication(builder);
 
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
-SwaggerServices.SwaggerConfigs(builder, "IdentityServer", 2);
+SwaggerServices.SwaggerConfigs(builder, "LogProcessor", 1);
 
 builder.Services.AddSwaggerGen();
 
@@ -57,5 +57,11 @@ app.UseAuthorization();
 app.UseCors("AllowAll");
 
 app.MapControllers();
+
+// Get an instance of the LogProcessor class from the DI container
+var logProcessor = app.Services.GetService<LogProcessor>();
+
+// Call the method to process logs
+logProcessor.ProcessarLogs();
 
 app.Run();

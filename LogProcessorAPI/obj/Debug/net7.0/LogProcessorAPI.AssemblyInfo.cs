@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogProcessorAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b770d849d8f07850e3e4a2a79ba4446203ad27a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63d742060b7e96c2ad0583900dbceaa7b701b6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogProcessorAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogProcessorAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

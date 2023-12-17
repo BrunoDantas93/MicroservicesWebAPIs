@@ -1,0 +1,32 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/LogProcessor",
+      "UpstreamPathTemplate": "/LogProcessor",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "logprocessorapi",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "logprocessorapi"
+    },
+    {
+      "DownstreamPathTemplate": "/api/LogProcessor/{everything}",
+      "UpstreamPathTemplate": "/LogProcessor/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "logprocessorapi",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "logprocessorapi"
+    }
+  ]
+}

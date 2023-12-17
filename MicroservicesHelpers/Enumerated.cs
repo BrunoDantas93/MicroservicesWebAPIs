@@ -1,4 +1,6 @@
-﻿namespace MicroservicesHelpers;
+﻿using System.ComponentModel;
+
+namespace MicroservicesHelpers;
 
 /// <summary>
 /// Contains enumerated types used in the Microservices application.
@@ -41,6 +43,21 @@ public class Enumerated
         User = 1
     }
 
+
+    public enum MicroservicesName
+    {
+        [Description("EventsAPI")]
+        EventsAPI,
+
+        [Description("IdentityServer")]
+        IdentityServer,
+
+        [Description("MicroservicesGateway")]
+        MicroservicesGateway,
+
+        [Description("UserDetailsAPI")]
+        UserDetailsAPI,
+    }
 
 
 }

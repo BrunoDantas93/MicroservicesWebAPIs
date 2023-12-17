@@ -2,7 +2,6 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\appsettin
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\appsettings.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\ocelot.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.authentication.json
-C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.centrallogaggregator.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.events.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.eventstype.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.global.json
@@ -138,3 +137,4 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\ref\Micro
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\InstagramApiSharp.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\BouncyCastle.Crypto.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.userdetailsapi.json
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.LogProcessorAPI.json

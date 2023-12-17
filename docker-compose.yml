@@ -77,3 +77,20 @@ services:
       - ./etc/Logs:/etc/Logs
       - ./etc/firebase:/etc/firebase  
 
+  logprocessorapi:
+    image: ${DOCKER_REGISTRY-}logprocessorapi
+    build:
+      context: .
+      dockerfile: logprocessorapi/Dockerfile
+    ports:
+      - "9095:443"  # Mapeie para a porta 443 para HTTPS
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80  # Specify HTTPS and HTTP URLs
+    networks:
+      - Microservices
+    volumes:
+      - ./etc/RSA:/etc/RSA
+      - ./etc/Logs:/etc/Logs
+      - ./etc/firebase:/etc/firebase  
+

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroservicesHelpers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63d742060b7e96c2ad0583900dbceaa7b701b6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroservicesHelpers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroservicesHelpers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

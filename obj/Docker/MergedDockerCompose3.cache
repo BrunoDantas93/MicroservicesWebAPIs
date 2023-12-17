@@ -1,0 +1,237 @@
+name: dockercompose16378753263993013119
+services:
+  eventsapi:
+    build:
+      context: C:\Projects\MicroservicesWebAPIs
+      dockerfile: EventsAPI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: eventsapi
+    networks:
+      Microservices: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "9093"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\firebase
+        target: /etc/firebase
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  identityserver:
+    build:
+      context: C:\Projects\MicroservicesWebAPIs
+      dockerfile: IdentityServer/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: identityserver
+    labels:
+      com.docker.compose.network: Microservices
+      com.docker.compose.project: Microservices
+      com.docker.compose.version: 2.23.0
+    networks:
+      Microservices: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "9091"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\firebase
+        target: /etc/firebase
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  logprocessorapi:
+    build:
+      context: C:\Projects\MicroservicesWebAPIs
+      dockerfile: logprocessorapi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: logprocessorapi
+    networks:
+      Microservices: null
+    ports:
+      - mode: ingress
+        target: 443
+        published: "9095"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\firebase
+        target: /etc/firebase
+        bind:
+          create_host_path: true
+  microservicesgateway:
+    build:
+      context: C:\Projects\MicroservicesWebAPIs
+      dockerfile: MicroservicesGateway/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: microservicesgateway
+    networks:
+      Microservices: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "9090"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\firebase
+        target: /etc/firebase
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  userdetailsapi:
+    build:
+      context: C:\Projects\MicroservicesWebAPIs
+      dockerfile: UserDetailsAPI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: userdetailsapi
+    networks:
+      Microservices: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "9094"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\Logs
+        target: /etc/Logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\RSA
+        target: /etc/RSA
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Projects\MicroservicesWebAPIs\etc\firebase
+        target: /etc/firebase
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bruno\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  Microservices:
+    name: dockercompose16378753263993013119_Microservices
+    driver: bridge

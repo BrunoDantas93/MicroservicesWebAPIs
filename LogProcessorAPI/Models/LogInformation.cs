@@ -1,5 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using LogProcessorAPI.Helpers;
+using System.Text.Json.Serialization;
 
 namespace LogProcessorAPI.Models;
 
@@ -12,7 +14,10 @@ public class LogInformation
     [BsonElement("WebAPI")]
     public string WebAPI { get; set; }
 
+    [BsonElement("TimeStanp")]
+    public DateTime TimeStanp { get; set; }
+
     [BsonElement("Value")]
-    public BsonDocument Value { get; set; }
+    public Dictionary<string, object> Value { get; set; }
 
 }

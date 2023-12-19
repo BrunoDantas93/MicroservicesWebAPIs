@@ -136,6 +136,8 @@ namespace MicroservicesHelpers
                 return false;
             }
 
+            
+            //Password must have at least one uppercase, one lowercase and one symbol
             var passwordRegex = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\\W_])[A-Za-z0-9\\?\\W_]{8,}$");
 
             return passwordRegex.IsMatch(password);

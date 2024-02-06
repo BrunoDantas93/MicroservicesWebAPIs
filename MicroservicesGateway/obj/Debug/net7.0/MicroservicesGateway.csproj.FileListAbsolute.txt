@@ -5,7 +5,9 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\oc
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.events.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.eventstype.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.global.json
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.LogProcessorAPI.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.SwaggerEndPoints.json
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.userdetailsapi.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\MicroservicesGateway.exe
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\MicroservicesGateway.deps.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\MicroservicesGateway.runtimeconfig.json
@@ -24,6 +26,7 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Ap
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Apis.Auth.PlatformServices.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Apis.Auth.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Google.Apis.Core.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\InstagramApiSharp.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\IPAddressRange.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Kros.Utils.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -65,6 +68,7 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\MongoDB.L
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Ocelot.dll
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\BouncyCastle.Crypto.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Serilog.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Serilog.AspNetCore.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
@@ -134,7 +138,3 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\refint\Mi
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\MicroservicesGateway.pdb
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\MicroservicesGateway.genruntimeconfig.cache
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\obj\Debug\net7.0\ref\MicroservicesGateway.dll
-C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\InstagramApiSharp.dll
-C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\BouncyCastle.Crypto.dll
-C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.userdetailsapi.json
-C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.LogProcessorAPI.json

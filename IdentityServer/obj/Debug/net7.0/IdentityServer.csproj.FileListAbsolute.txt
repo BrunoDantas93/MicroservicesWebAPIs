@@ -19,6 +19,7 @@ C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Google.Apis.Cor
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityModel.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityServer4.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\IdentityServer4.Storage.dll
+C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\InstagramApiSharp.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
@@ -46,6 +47,7 @@ C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\MongoDB.Driver.
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\MongoDB.Driver.Core.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\BouncyCastle.Crypto.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Serilog.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Serilog.AspNetCore.dll
 C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
@@ -96,5 +98,3 @@ C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\refint\Identity
 C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\IdentityServer.pdb
 C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\IdentityServer.genruntimeconfig.cache
 C:\Projects\MicroservicesWebAPIs\IdentityServer\obj\Debug\net7.0\ref\IdentityServer.dll
-C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\InstagramApiSharp.dll
-C:\Projects\MicroservicesWebAPIs\IdentityServer\bin\Debug\net7.0\BouncyCastle.Crypto.dll

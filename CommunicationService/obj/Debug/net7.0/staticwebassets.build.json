@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "N1DQzrDYDqrjK9GBgpzsB/V+9qbwL6nmWKTX6c8ulZU=",
+  "Source": "CommunicationService",
+  "BasePath": "_content/CommunicationService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

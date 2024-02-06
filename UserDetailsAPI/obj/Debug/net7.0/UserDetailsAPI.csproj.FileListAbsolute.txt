@@ -1,11 +1,3 @@
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.csproj.AssemblyReference.cache
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.AssemblyInfoInputs.cache
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.AssemblyInfo.cs
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.csproj.CoreCompileInputs.cache
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.sourcelink.json
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\bin\Debug\net7.0\appsettings.Development.json
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\bin\Debug\net7.0\appsettings.json
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\bin\Debug\net7.0\UserDetailsAPI.exe
@@ -79,6 +71,14 @@ C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\bin\Debug\net7.0\runtimes\win\li
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\bin\Debug\net7.0\MicroservicesHelpers.dll
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\bin\Debug\net7.0\MicroservicesHelpers.pdb
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.csproj.AssemblyReference.cache
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.AssemblyInfoInputs.cache
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.AssemblyInfo.cs
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.csproj.CoreCompileInputs.cache
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\UserDetailsAPI.sourcelink.json
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\staticwebassets.build.json
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\staticwebassets.development.json
 C:\Projects\MicroservicesWebAPIs\UserDetailsAPI\obj\Debug\net7.0\staticwebassets\msbuild.UserDetailsAPI.Microsoft.AspNetCore.StaticWebAssets.props

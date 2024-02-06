@@ -120,7 +120,7 @@ public class MultiAuthService
         // Load the RSA public key
         var rsa = RSA.Create();
 
-        var publicKeyText = System.IO.File.ReadAllText("../etc/RSA/PEM/public_key.pem");
+        var publicKeyText = File.ReadAllText("../etc/RSA/PEM/public_key.pem");
         rsa.ImportFromPem(publicKeyText);
 
         return new RsaSecurityKey(rsa);

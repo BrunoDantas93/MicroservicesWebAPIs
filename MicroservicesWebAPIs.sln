@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsAPI", "EventsAPI\Even
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserDetailsAPI", "UserDetailsAPI\UserDetailsAPI.csproj", "{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogProcessorAPI", "LogProcessorAPI\LogProcessorAPI.csproj", "{46331165-F4DA-42FE-BE6D-A6BC376A1A48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogProcessorAPI", "LogProcessorAPI\LogProcessorAPI.csproj", "{46331165-F4DA-42FE-BE6D-A6BC376A1A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationService", "CommunicationService\CommunicationService.csproj", "{67180EF5-A5CA-4674-A359-C13D6AE412BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{46331165-F4DA-42FE-BE6D-A6BC376A1A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46331165-F4DA-42FE-BE6D-A6BC376A1A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46331165-F4DA-42FE-BE6D-A6BC376A1A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67180EF5-A5CA-4674-A359-C13D6AE412BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67180EF5-A5CA-4674-A359-C13D6AE412BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67180EF5-A5CA-4674-A359-C13D6AE412BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67180EF5-A5CA-4674-A359-C13D6AE412BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

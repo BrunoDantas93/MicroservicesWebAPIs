@@ -94,3 +94,20 @@ services:
       - ./etc/Logs:/etc/Logs
       - ./etc/firebase:/etc/firebase  
 
+  communicationservice:
+    image: ${DOCKER_REGISTRY-}communicationservice
+    build:
+      context: .
+      dockerfile: communicationservice/Dockerfile
+    ports:
+      - "9096:443"  # Mapeie para a porta 443 para HTTPS
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80  # Specify HTTPS and HTTP URLs
+    networks:
+      - Microservices
+    volumes:
+      - ./etc/RSA:/etc/RSA
+      - ./etc/Logs:/etc/Logs
+      - ./etc/firebase:/etc/firebase  
+

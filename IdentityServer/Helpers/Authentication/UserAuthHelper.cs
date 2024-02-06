@@ -51,6 +51,7 @@ public class UserAuthHelper
                     new Claim("user_type", "user"),
                     new Claim(ClaimTypes.Name, user.Username),
                     new Claim("userID", user.Id),
+                    new Claim("language", "pt-pt"),
                     new Claim(ClaimTypes.Role, user.UserType.ToString())
                 },
                 expires: expiration,

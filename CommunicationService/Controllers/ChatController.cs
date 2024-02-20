@@ -1,13 +1,21 @@
 ﻿using CommunicationService.Models.MongoDB;
 using CommunicationService.Models.Requests;
 using CommunicationService.Services;
-using FirebaseAdmin.Messaging;
 using MicroservicesHelpers.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using static CommunicationService.Helpers.Enumerated;
 using static MicroservicesHelpers.Enumerated;
+using CommunicationService.Models.SignalR;
+using DeepL;
+using Amazon.Runtime.Internal;
+using System.Text;
+using CommunicationService.Hubs;
+using System.Runtime.InteropServices.JavaScript;
+using Newtonsoft.Json.Linq;
+using static System.Net.Mime.MediaTypeNames;
+using System.Text.Json;
+using System.Net.Http.Headers;
 
 namespace CommunicationService.Controllers;
 
@@ -23,18 +31,49 @@ public class ChatController : ControllerBase
     /// </summary>
     private readonly ILogger _logger;
 
-    
+
     private readonly HubService _hubService;
+    private readonly CommunicationHub _communicationHub;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ChatController"/> class.
     /// </summary>
     /// <param name="logger">The logger for logging information.</param>
     /// <param name="chatService">The service for managing chat-related functionalities.</param>
-    public ChatController(ILogger<ChatController> logger, ChatService chatService, HubService hubService)
+    public ChatController(ILogger<ChatController> logger, ChatService chatService, HubService hubService, CommunicationHub communicationHub)
     {
         _logger = logger;
         _hubService = hubService;
+        _communicationHub = communicationHub;
+    }
+
+
+    //Get 
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [HttpGet("{userId}"), Authorize]
+    public async Task<IActionResult> ListChat(string userId)
+    {
+        try
+        {
+            var chats = await _hubService.GetChats(userId);
+
+            if (chats == null || chats.Count == 0)
+            {
+                return NotFound(new MicroservicesResponse(MicroservicesCode.FatalError, "Chat Not Found", $"No chats found for user with ID {userId}.", null));
+            }
+
+            return Ok(chats);
+        }
+        catch (Exception ex)
+        {
+            // Log the error for debugging and monitoring purposes
+            _logger.LogError(ex, "Error listing the chats.");
+
+            // If an exception occurs during chat creation, return a BadRequest response with details
+            return BadRequest(new MicroservicesResponse(MicroservicesCode.FatalError, "Error", "Error listing the chats", ex.Message));
+        }
     }
 
     //Post /
@@ -183,7 +222,99 @@ public class ChatController : ControllerBase
     }
 
 
+    //Post /SendNotifications
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <remarks>
+    /// </remarks>
+    /// <param name="chatId">The ID of the chat containing the message.</param>
+    /// <param name="messageId">The ID of the message to update.</param>
+    /// <param name="newStatus">The new status to set for the message.</param>
+    /// <returns>Returns an IActionResult indicating the result of updating the message status.</returns>
+    /// <response code="200">OK - The message status was successfully updated.</response>
+    /// <response code="400">Bad Request - Indicates issues or validation errors during the status update.</response>
+    /// <response code="401">Unauthorized - The user is not authenticated to update the message status.</response>
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [HttpPost("SendNotifications"), Authorize]
+    public async Task<IActionResult> SendNotifications([FromBody] Notifications noti)
+    {
+        try
+        {
+            // Attempt to update the message status
+            List<string> connections = await _hubService.SendNotifications(noti);
 
+            foreach (string connection in connections)
+            {
+                await _communicationHub.SendNotifications(connection, noti.Content);
+            }
+
+            // Return a successful response
+            return Ok(new MicroservicesResponse(MicroservicesCode.OK, "Send Notifications", "All Notifications are successfully sent", null));
+        }
+        catch (Exception ex)
+        {
+            // Log the error and return a BadRequest response with details
+            _logger.LogError(ex, $"Error Send Notifications");
+            return BadRequest(new MicroservicesResponse(MicroservicesCode.FatalError, "Error", "Error Send Notifications", null));
+        }
+    }
+
+
+    [HttpPost("TranslateDeeplAsync")]
+    public async Task<IActionResult> TranslateDeeplAsync([FromBody] TranslateDeelp translate)
+    {
+        try
+        {
+            // Substitua 'SUA_CHAVE_DE_API' pelo token da sua conta DeepL
+            string authKey = "";
+
+            using (var httpClient = new HttpClient())
+            {
+                httpClient.BaseAddress = new Uri("https://api-free.deepl.com/v2/");
+
+                using StringContent jsonContent = new(
+                    JsonSerializer.Serialize(new
+                    {
+                        text = new JArray(translate.Message),
+                        target_lang = translate.Language.ToString()
+                    }),
+                    Encoding.UTF8,
+                    "application/json");
+
+
+                // Configurar cabeçalhos da solicitação
+                //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("DeepL-Auth-Key ", authKey);
+                httpClient.DefaultRequestHeaders.Add("Authorization", "DeepL-Auth-Key " + authKey);
+
+                // Enviar solicitação POST
+                HttpResponseMessage response = await httpClient.PostAsync("translate", jsonContent);
+
+                // Verificar se a solicitação foi bem-sucedida
+                if (response.IsSuccessStatusCode)
+                {
+                    // Ler e imprimir o conteúdo da resposta
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(responseBody);
+                }
+                else
+                {
+                    // Imprimir mensagem de erro caso a solicitação falhe
+                    throw new Exception(response.ToString());
+                }
+            }
+
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            // Log the error and return a BadRequest response with details
+            _logger.LogError(ex, $"");
+            return BadRequest(new MicroservicesResponse(MicroservicesCode.FatalError, "Error", "Error «", ex.Message));
+        }
+    }
 
 
 }

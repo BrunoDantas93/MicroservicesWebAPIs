@@ -4,6 +4,8 @@ using CommunicationService.Models.Requests;
 using CommunicationService.Models.SignalR;
 using static CommunicationService.Helpers.Enumerated;
 using static MicroservicesHelpers.Enumerated;
+using CommunicationService.Models.Responses;
+using CommunicationService.Hubs;
 
 namespace CommunicationService.Services;
 
@@ -21,6 +23,9 @@ public class HubService
     /// </summary>
     private static List<ConversationRoom> _conversationRoom;
 
+    /// <summary>
+    /// 
+    /// </summary>
     private readonly ChatService _chatService;
 
     public HubService(ChatService chatService)
@@ -36,15 +41,17 @@ public class HubService
     /// <param name="connection">The connection information to be added or updated.</param>
     /// <param name="connectionId">The unique identifier of the connection.</param>
     /// <exception cref="Exception">Thrown if the operation fails.</exception>
-    public void CreateConnection(Connection connection, string connectionId)
+    public async void CreateConnection(Connection connection, string connectionId)
     {
         try
         {
+            Connection existingConnection = null;
+
             // Check if there are any existing connections
             if (_connections.Any(c => c.UserID == connection.UserID))
             {
                 // If a connection with the same UserID exists, add the connectionId to it
-                Connection existingConnection = _connections.First(c => c.UserID == connection.UserID);
+                existingConnection = _connections.First(c => c.UserID == connection.UserID);
                 existingConnection.ConnectionIDs.Add(connectionId);
             }
             else
@@ -52,6 +59,30 @@ public class HubService
                 // If no connection with the same UserID exists, add the new connection
                 connection.ConnectionIDs.Add(connectionId);
                 _connections.Add(connection);
+
+                existingConnection = connection;
+            }
+
+            List<Chat> lstChat = await GetChats(connection.UserID);
+
+            if(lstChat.Count > 0)
+            {
+                List<string> lstChatGroup = lstChat.FindAll(x => x.Type == ChatType.Group)
+                                                   .Select(chat => chat.Id)
+                                                   .ToList();
+
+                if (existingConnection.Rooms.Count > 0)
+                {
+                    foreach (string chat in lstChatGroup)
+                    {
+                        if(!existingConnection.Rooms.Contains(chat))
+                            existingConnection.Rooms.Add(chat);
+                    }
+                }
+                else
+                {
+                    existingConnection.Rooms.AddRange(lstChatGroup);
+                }
             }
         }
         catch (Exception ex)
@@ -87,6 +118,19 @@ public class HubService
         catch (Exception ex)
         {
             throw new Exception("Failed to disconnect connection.", ex);
+        }
+    }
+
+    public async Task<List<Chat>> GetChats(string userID)
+    {
+        try
+        {
+            return await _chatService.GetChatsForParticipant(userID);
+        }
+        catch (Exception ex)
+        {
+            // Log and handle the exception according to your application's error handling strategy
+            throw ex;
         }
     }
 
@@ -250,21 +294,70 @@ public class HubService
         }
     }
 
-    /*
-     * Criar o chat se não exitir
-     * Update o estado da messagem 
-     */
-
-
-    public void SaveMessage()
+    public async Task<(List<string>, MessageResponse)> SendMessage(MessageSignalR message)
     {
         try
         {
+            MessageRequests msgR = new MessageRequests();
+            msgR.SenderId = message.SenderId;
+            msgR.Content = message.Content;
+            msgR.ReceiverId = message.ReceiverId;
 
+            await AddMessage(message.ReceiverId, msgR);
+
+            MessageResponse msgRes = new MessageResponse();
+            List<string> connectionIDs = new List<string>();
+
+            Connection conn = _connections.FirstOrDefault(u => u.UserID == msgR.SenderId);
+            msgRes.UserName = conn.UserName;
+            msgRes.Content = message.Content;
+
+            if (message.Type == ChatType.Individual)
+            {
+                Connection receiverId = _connections.FirstOrDefault(u => u.UserID == msgR.ReceiverId);
+                connectionIDs.AddRange(conn.ConnectionIDs);
+            }
+            else
+            {
+                // Encontrar todas as conexões que têm msgR.ReceiverId na lista de Rooms
+                List<Connection> matchingConnections = _connections.FindAll(r => r.Rooms.Contains(msgR.ReceiverId)).ToList();
+
+                // Obter todos os IDs das conexões encontradas em uma lista única
+                List<string> receiverIds = matchingConnections.SelectMany(connection => connection.ConnectionIDs).ToList();
+
+                connectionIDs.AddRange(receiverIds);
+            }
+
+            return (connectionIDs, msgRes);
         }
         catch (Exception ex)
         {
-            throw;
+            throw ex;
+        }
+    }
+
+
+    public async Task<List<string>> SendNotifications(Notifications notifications)
+    {
+        try
+        {
+            List<string> connectionIDs = new List<string>();
+
+            foreach (string user in notifications.UserID)
+            {
+                List<string> conn = _connections.FirstOrDefault(u => u.UserID == user).ConnectionIDs;
+
+                if(conn != null && conn.Count > 0)
+                {
+                    connectionIDs.AddRange(conn);
+                }
+            }
+
+            return connectionIDs;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
         }
     }
 

@@ -1,4 +1,5 @@
-﻿using CommunicationService.Models.SignalR;
+﻿using CommunicationService.Models.Responses;
+using CommunicationService.Models.SignalR;
 using CommunicationService.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
@@ -79,8 +80,44 @@ public class CommunicationHub : Hub
 
 
     [Authorize]
-    public async Task SendMessage()
+    public async Task<MessageResponse?> ReceiveMessage(MessageSignalR message)
     {
-        await Clients.All.SendAsync("ReceiveMessage");
+        try
+        {
+            (List<string>, MessageResponse) conn = await _hubService.SendMessage(message);
+
+            if (conn.Item1.Count > 0)
+            {
+                foreach (string connID in conn.Item1)
+                {
+                    await Clients.Client(connID).SendAsync("ReceiveMessage", conn.Item2);
+                }
+
+                return conn.Item2;
+            }
+
+            return null;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, $"Error sending messages.", message);
+            return null;
+        }
+    }
+
+
+    public async Task<bool> SendNotifications(string connectionId, string notification)
+    {
+        try
+        {
+            await Clients.Client(connectionId).SendAsync("ReceiveNotification", notification);
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, $"Error sending Notifications.", notification);
+            return false;
+        }
     }
 }

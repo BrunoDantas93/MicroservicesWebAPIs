@@ -59,5 +59,70 @@ public class Enumerated
         UserDetailsAPI,
     }
 
+    public enum LanguageCode
+    {
+        [Description("Arabic")]
+        AR = 1,
+        [Description("Bulgarian")]
+        BG,
+        [Description("Czech")]
+        CS,
+        [Description("Danish")]
+        DA,
+        [Description("German")]
+        DE,
+        [Description("Greek")]
+        EL,
+        [Description("English")]
+        EN,
+        [Description("Spanish")]
+        ES,
+        [Description("Estonian")]
+        ET,
+        [Description("Finnish")]
+        FI,
+        [Description("French")]
+        FR,
+        [Description("Hungarian")]
+        HU,
+        [Description("Indonesian")]
+        ID,
+        [Description("Italian")]
+        IT,
+        [Description("Japanese")]
+        JA,
+        [Description("Korean")]
+        KO,
+        [Description("Lithuanian")]
+        LT,
+        [Description("Latvian")]
+        LV,
+        [Description("Norwegian (Bokmål)")]
+        NB,
+        [Description("Dutch")]
+        NL,
+        [Description("Polish")]
+        PL,
+        [Description("Portuguese (all Portuguese varieties mixed)")]
+        PT,
+        [Description("Romanian")]
+        RO,
+        [Description("Russian")]
+        RU,
+        [Description("Slovak")]
+        SK,
+        [Description("Slovenian")]
+        SL,
+        [Description("Swedish")]
+        SV,
+        [Description("Turkish")]
+        TR,
+        [Description("Ukrainian")]
+        UK,
+        [Description("Chinese")]
+        ZH
+    }
+
+
 
 }

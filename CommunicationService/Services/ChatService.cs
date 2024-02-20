@@ -272,4 +272,30 @@ public class ChatService
             throw ex;
         }
     }
+
+    /// <summary>
+    /// Retrieves a list of chats in which a user is a participant.
+    /// </summary>
+    /// <param name="participantId">The ID of the participant for whom to retrieve chats.</param>
+    /// <returns>A list of chats in which the participant is involved.</returns>
+    public async Task<List<Chat>> GetChatsForParticipant(string participantId)
+    {
+        try
+        {
+            // Find chats where the participant is involved
+            var filter = Builders<Chat>.Filter.AnyEq(c => c.Participants, participantId);
+            var chats = await _chatCollection.Find(filter).ToListAsync();
+
+            return chats;
+        }
+        catch (Exception ex)
+        {
+            // Log and rethrow the exception for higher-level error handling
+            throw ex;
+        }
+    }
+
+
+
+
 }

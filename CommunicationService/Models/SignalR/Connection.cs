@@ -28,5 +28,6 @@ public class Connection
     /// <summary>
     /// Gets or sets the list of conversation rooms associated with the connection.
     /// </summary>
-    public List<ConversationRoom> Rooms { get; set; }
+    //public List<ConversationRoom> Rooms { get; set; 
+    public List<string> Rooms { get; set; }
 }

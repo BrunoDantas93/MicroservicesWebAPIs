@@ -93,3 +93,7 @@ C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\refint\Co
 C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\CommunicationService.pdb
 C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\CommunicationService.genruntimeconfig.cache
 C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\ref\CommunicationService.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\DeepL.net.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Polly.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Polly.Extensions.Http.dll

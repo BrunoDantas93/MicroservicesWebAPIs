@@ -5,7 +5,8 @@ using CommunicationService.Models.SignalR;
 using static CommunicationService.Helpers.Enumerated;
 using static MicroservicesHelpers.Enumerated;
 using CommunicationService.Models.Responses;
-using CommunicationService.Hubs;
+using DeepL;
+using DeepL.Model;
 
 namespace CommunicationService.Services;
 
@@ -28,11 +29,15 @@ public class HubService
     /// </summary>
     private readonly ChatService _chatService;
 
+    private string _apiKey;
+
+
     public HubService(ChatService chatService)
     {
         _connections = new List<Connection>();
         _conversationRoom = new List<ConversationRoom>();
         _chatService = chatService;
+        _apiKey = "577134a5-dd84-488e-b59c-c4fa196dacaf:fx";
     }
 
     /// <summary>
@@ -354,6 +359,22 @@ public class HubService
             }
 
             return connectionIDs;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
+    public async Task<TextResult> TranslateDeeplAsync(string text, string languageCode)
+    {
+        try
+        {
+            var translator = new DeepL.Translator(_apiKey);
+
+            TextResult translatedText = await translator.TranslateTextAsync(text, null, languageCode);
+
+            return translatedText;
         }
         catch (Exception ex)
         {

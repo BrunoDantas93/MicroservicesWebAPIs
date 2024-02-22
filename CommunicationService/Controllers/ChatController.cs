@@ -16,6 +16,7 @@ using Newtonsoft.Json.Linq;
 using static System.Net.Mime.MediaTypeNames;
 using System.Text.Json;
 using System.Net.Http.Headers;
+using Org.BouncyCastle.Utilities.Encoders;
 
 namespace CommunicationService.Controllers;
 
@@ -268,45 +269,7 @@ public class ChatController : ControllerBase
     {
         try
         {
-            // Substitua 'SUA_CHAVE_DE_API' pelo token da sua conta DeepL
-            string authKey = "";
-
-            using (var httpClient = new HttpClient())
-            {
-                httpClient.BaseAddress = new Uri("https://api-free.deepl.com/v2/");
-
-                using StringContent jsonContent = new(
-                    JsonSerializer.Serialize(new
-                    {
-                        text = new JArray(translate.Message),
-                        target_lang = translate.Language.ToString()
-                    }),
-                    Encoding.UTF8,
-                    "application/json");
-
-
-                // Configurar cabeçalhos da solicitação
-                //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("DeepL-Auth-Key ", authKey);
-                httpClient.DefaultRequestHeaders.Add("Authorization", "DeepL-Auth-Key " + authKey);
-
-                // Enviar solicitação POST
-                HttpResponseMessage response = await httpClient.PostAsync("translate", jsonContent);
-
-                // Verificar se a solicitação foi bem-sucedida
-                if (response.IsSuccessStatusCode)
-                {
-                    // Ler e imprimir o conteúdo da resposta
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine(responseBody);
-                }
-                else
-                {
-                    // Imprimir mensagem de erro caso a solicitação falhe
-                    throw new Exception(response.ToString());
-                }
-            }
-
-            return Ok();
+            return Ok(await _hubService.TranslateDeeplAsync(translate.Message, translate.Language.ToString()));
         }
         catch (Exception ex)
         {
@@ -315,6 +278,4 @@ public class ChatController : ControllerBase
             return BadRequest(new MicroservicesResponse(MicroservicesCode.FatalError, "Error", "Error «", ex.Message));
         }
     }
-
-
 }

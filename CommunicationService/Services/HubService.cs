@@ -37,7 +37,7 @@ public class HubService
         _connections = new List<Connection>();
         _conversationRoom = new List<ConversationRoom>();
         _chatService = chatService;
-        _apiKey = "577134a5-dd84-488e-b59c-c4fa196dacaf:fx";
+        _apiKey = "";
     }
 
     /// <summary>

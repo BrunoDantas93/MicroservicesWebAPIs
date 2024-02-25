@@ -54,6 +54,17 @@
           "Url": "https://logprocessorapi:443/swagger/v1/swagger.json"
         }
       ]
+    },
+    {
+      "Key": "communication",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Communication Service",
+          "Version": "1.0",
+          "Url": "https://communicationservice:443/swagger/v1/swagger.json"
+        }
+      ]
     }
   ]
 }

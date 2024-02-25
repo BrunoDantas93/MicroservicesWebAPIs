@@ -2,6 +2,7 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\appsettin
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\appsettings.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\ocelot.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.authentication.json
+C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.communicationservice.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.events.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.eventstype.json
 C:\Projects\MicroservicesWebAPIs\MicroservicesGateway\bin\Debug\net7.0\Routes\ocelot.global.json

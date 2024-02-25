@@ -123,7 +123,8 @@ public class ChatService
                 throw new InvalidOperationException($"Chat with ID {chatId} not found.");
             }
 
-           
+           if(chat.Messages == null)
+                chat.Messages = new List<Message>();
 
             // Add the new message to the chat
             chat.Messages.Add(message);

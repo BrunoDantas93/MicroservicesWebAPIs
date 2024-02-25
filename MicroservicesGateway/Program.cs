@@ -6,6 +6,18 @@ using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
+
 var routes = "Routes";
 
 builder.Configuration.AddOcelotWithSwaggerSupport(options =>
@@ -15,6 +27,8 @@ builder.Configuration.AddOcelotWithSwaggerSupport(options =>
 
 builder.Services.AddOcelot(builder.Configuration);
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
+
+
 
 var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
@@ -55,6 +69,8 @@ app.UseSwaggerForOcelotUI(options =>
     options.ReConfigureUpstreamSwaggerJson = AlterUpstream.AlterUpstreamSwaggerJson;
 
 }).UseOcelot().Wait();
+
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

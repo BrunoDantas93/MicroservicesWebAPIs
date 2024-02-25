@@ -1,0 +1,32 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Chat/",
+      "UpstreamPathTemplate": "/Chat/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "communicationservice",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "communication"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Chat/{everything}",
+      "UpstreamPathTemplate": "/Chat/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "communicationservice",
+          "Port": 443
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "communication"
+    }
+  ]
+}

@@ -1,9 +1,12 @@
 ﻿using CommunicationService.Models.Responses;
 using CommunicationService.Models.SignalR;
 using CommunicationService.Services;
+using DeepL.Model;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using System.Runtime.CompilerServices;
+using System.Security.Claims;
 
 namespace CommunicationService.Hubs;
 
@@ -25,7 +28,7 @@ public class CommunicationHub : Hub
     /// <returns>Asynchronous task.</returns>
     /// <exception cref="HubException">Exception thrown in case of connection failure.</exception>
     [Authorize]
-    public override Task OnConnectedAsync()
+    public async override Task<Task> OnConnectedAsync()
     {
         try
         {
@@ -42,7 +45,7 @@ public class CommunicationHub : Hub
                 throw new HubException("Invalid UserID. Connection refused.");
 
             // Call the HubService to create the connection in the backend
-            _hubService.CreateConnection(connection, Context.ConnectionId);
+            await _hubService.CreateConnection(connection, Context.ConnectionId);
 
             // Call the base method to continue with the default processing
             return base.OnConnectedAsync();
@@ -55,12 +58,15 @@ public class CommunicationHub : Hub
         }
     }
 
+
+
+
     /// <summary>
     /// Handles the disconnection event when a client disconnects from the hub.
     /// </summary>
     /// <param name="exception">The exception that led to the disconnection, if any.</param>
     /// <returns>Asynchronous task.</returns>
-    public override Task OnDisconnectedAsync(Exception exception)
+    public async override Task<Task> OnDisconnectedAsync(Exception exception)
     {
         try
         {
@@ -80,7 +86,7 @@ public class CommunicationHub : Hub
 
 
     [Authorize]
-    public async Task<MessageResponse?> ReceiveMessage(MessageSignalR message)
+    public async Task<MessageResponse?> SendMessage(MessageSignalR message)
     {
         try
         {

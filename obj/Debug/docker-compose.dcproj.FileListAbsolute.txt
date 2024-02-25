@@ -16,6 +16,7 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\MicroservicesGateway.deps.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\MicroservicesGateway.runtimeconfig.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\ocelot.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.authentication.json
+C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.communicationservice.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.events.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.eventstype.json
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Routes\ocelot.global.json
@@ -37,6 +38,7 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\MongoDB.Driver.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.Options.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\MicroservicesHelpers.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\DeepL.net.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\MongoDB.Bson.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -61,6 +63,8 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\InstagramApiSharp.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Google.Apis.Auth.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\System.Text.Json.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\Polly.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.Http.Polly.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\DnsClient.dll
@@ -89,6 +93,7 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\Google.Apis.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Google.Api.Gax.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Google.Api.Gax.Rest.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\BouncyCastle.Crypto.dll
+C:\Projects\MicroservicesWebAPIs\bin\Debug\Polly.Extensions.Http.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Data.SqlClient.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
 C:\Projects\MicroservicesWebAPIs\bin\Debug\Newtonsoft.Json.Bson.dll
@@ -104,7 +109,3 @@ C:\Projects\MicroservicesWebAPIs\bin\Debug\MicroservicesHelpers.pdb
 C:\Projects\MicroservicesWebAPIs\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Projects\MicroservicesWebAPIs\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Projects\MicroservicesWebAPIs\obj\Debug\docker-compose.dcproj.CopyComplete
-C:\Projects\MicroservicesWebAPIs\bin\Debug\DeepL.net.dll
-C:\Projects\MicroservicesWebAPIs\bin\Debug\Polly.dll
-C:\Projects\MicroservicesWebAPIs\bin\Debug\Microsoft.Extensions.Http.Polly.dll
-C:\Projects\MicroservicesWebAPIs\bin\Debug\Polly.Extensions.Http.dll

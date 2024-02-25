@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
 using System.IdentityModel.Tokens.Jwt;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -43,7 +44,12 @@ public class MultiAuthService
                 {
                     var accessToken = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
 
-                    if (!string.IsNullOrEmpty(accessToken))
+                    var path = context.HttpContext.Request.Path;
+
+                    if(path.StartsWithSegments("/hub"))
+                        accessToken = context.Request.Query["access_token"];
+
+                    if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hub"))
                     {
                         context.Token = accessToken;
                     }
@@ -89,6 +95,10 @@ public class MultiAuthService
             {
                 string authorization = context.Request.Headers[HeaderNames.Authorization];
                 var apiKey = context.Request.Headers.ContainsKey("ApiKey");
+                var path = context.Request.HttpContext.Request.Path;
+
+                var accessToken = context.Request.Query["access_token"];
+                
 
                 if (!string.IsNullOrEmpty(authorization) && authorization.StartsWith("Bearer "))
                 {
@@ -107,6 +117,10 @@ public class MultiAuthService
                 else if (apiKey)
                 {
                     return "SecondJwtScheme";
+                }
+                else if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hub"))
+                {
+                    return JwtBearerDefaults.AuthenticationScheme;
                 }
 
                 return JwtBearerDefaults.AuthenticationScheme;

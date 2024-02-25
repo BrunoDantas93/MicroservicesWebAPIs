@@ -7,6 +7,7 @@ C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Communica
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\CommunicationService.pdb
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\AWSSDK.Core.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\DeepL.net.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\DnsClient.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\FirebaseAdmin.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Google.Api.Gax.dll
@@ -27,6 +28,7 @@ C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
@@ -42,6 +44,8 @@ C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\MongoDB.D
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\MongoDB.Driver.Core.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Polly.dll
+C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Polly.Extensions.Http.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\BouncyCastle.Crypto.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Serilog.dll
 C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Serilog.AspNetCore.dll
@@ -93,7 +97,3 @@ C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\refint\Co
 C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\CommunicationService.pdb
 C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\CommunicationService.genruntimeconfig.cache
 C:\Projects\MicroservicesWebAPIs\CommunicationService\obj\Debug\net7.0\ref\CommunicationService.dll
-C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\DeepL.net.dll
-C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
-C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Polly.dll
-C:\Projects\MicroservicesWebAPIs\CommunicationService\bin\Debug\net7.0\Polly.Extensions.Http.dll

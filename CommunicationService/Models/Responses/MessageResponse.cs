@@ -2,11 +2,11 @@
 
 public class MessageResponse
 {
-    /// <summary>
-    /// Gets or sets the user name associated with the connection.
-    /// </summary>
-    public string UserName { get; set; } = string.Empty;
+    public string ChatID { get; set; } = string.Empty;
 
+    public string SenderId { get; set; } = string.Empty;
+
+    public string ReceiverId { get; set; } = string.Empty;
 
     public string Content { get; set; } = string.Empty;
 

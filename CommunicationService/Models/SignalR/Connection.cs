@@ -23,11 +23,11 @@ public class Connection
     /// <summary>
     /// Gets or sets the unique identifiers of the connection.
     /// </summary>
-    public List<string> ConnectionIDs { get; set; }
+    public List<string> ConnectionIDs { get; set; } = new List<string>();
 
     /// <summary>
     /// Gets or sets the list of conversation rooms associated with the connection.
     /// </summary>
     //public List<ConversationRoom> Rooms { get; set; 
-    public List<string> Rooms { get; set; }
+    public List<string> Rooms { get; set; } = new List<string>();
 }

@@ -7,6 +7,8 @@ using static MicroservicesHelpers.Enumerated;
 using CommunicationService.Models.Responses;
 using DeepL;
 using DeepL.Model;
+using System.Data.Common;
+using System.Security;
 
 namespace CommunicationService.Services;
 
@@ -37,7 +39,7 @@ public class HubService
         _connections = new List<Connection>();
         _conversationRoom = new List<ConversationRoom>();
         _chatService = chatService;
-        _apiKey = "";
+        _apiKey = "577134a5-dd84-488e-b59c-c4fa196dacaf:fx";
     }
 
     /// <summary>
@@ -46,7 +48,7 @@ public class HubService
     /// <param name="connection">The connection information to be added or updated.</param>
     /// <param name="connectionId">The unique identifier of the connection.</param>
     /// <exception cref="Exception">Thrown if the operation fails.</exception>
-    public async void CreateConnection(Connection connection, string connectionId)
+    public async Task CreateConnection(Connection connection, string connectionId)
     {
         try
         {
@@ -308,19 +310,26 @@ public class HubService
             msgR.Content = message.Content;
             msgR.ReceiverId = message.ReceiverId;
 
-            await AddMessage(message.ReceiverId, msgR);
+            MicroservicesResponse res = await AddMessage(message.ReceiverId, msgR);
 
             MessageResponse msgRes = new MessageResponse();
             List<string> connectionIDs = new List<string>();
 
-            Connection conn = _connections.FirstOrDefault(u => u.UserID == msgR.SenderId);
-            msgRes.UserName = conn.UserName;
+            Connection conn = _connections.FirstOrDefault(u => u.UserID == message.SenderId);
+            msgRes.SenderId = message.SenderId;
             msgRes.Content = message.Content;
+            msgRes.ChatID = message.ReceiverId;
+            msgRes.ReceiverId = message.ReceiverId;
 
             if (message.Type == ChatType.Individual)
             {
-                Connection receiverId = _connections.FirstOrDefault(u => u.UserID == msgR.ReceiverId);
-                connectionIDs.AddRange(conn.ConnectionIDs);
+                Chat chat = (Chat)res.Data;
+
+                foreach (string userid in chat.Participants)
+                {
+                    Connection receiverId = _connections.FirstOrDefault(u => u.UserID == userid);
+                    connectionIDs.AddRange(receiverId.ConnectionIDs);
+                }
             }
             else
             {

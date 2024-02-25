@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="Routes\ocelot.communicationservice.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FirebaseAdmin" Version="2.4.0" />
     <PackageReference Include="Google.Apis.Auth" Version="1.64.0" />
     <PackageReference Include="InstagramApiSharp" Version="1.7.4" />

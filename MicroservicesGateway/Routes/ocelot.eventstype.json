@@ -12,7 +12,18 @@
       ],
       "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
       "DangerousAcceptAnyServerCertificateValidator": true,
-      "SwaggerKey": "eventstypeapi"
+      "SwaggerKey": "eventstypeapi",
+      "Cors": {
+        "AllowedOrigins": [
+          "*"
+        ],
+        "AllowedMethods": [
+          "*"
+        ],
+        "AllowedHeaders": [
+          "*"
+        ]
+      }
     },
     {
       "DownstreamPathTemplate": "/api/EventsType/{everything}",
@@ -26,7 +37,18 @@
       ],
       "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
       "DangerousAcceptAnyServerCertificateValidator": true,
-      "SwaggerKey": "eventstypeapi"
+      "SwaggerKey": "eventstypeapi",
+      "Cors": {
+        "AllowedOrigins": [
+          "*"
+        ],
+        "AllowedMethods": [
+          "*"
+        ],
+        "AllowedHeaders": [
+          "*"
+        ]
+      }
     }
   ]
 }

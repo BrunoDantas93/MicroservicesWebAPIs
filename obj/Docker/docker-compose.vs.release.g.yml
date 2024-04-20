@@ -55,7 +55,7 @@ services:
     tty: true
 
   identityserver:
-    container_name: "IdentityServer"
+    container_name: "IdentityServer_1"
     build:
       args:
         BUILD_CONFIGURATION: Release

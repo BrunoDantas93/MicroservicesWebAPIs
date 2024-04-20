@@ -12,7 +12,18 @@
       ],
       "UpstreamHttpMethod": [ "GET" ],
       "DangerousAcceptAnyServerCertificateValidator": true,
-      "SwaggerKey": "logprocessorapi"
+      "SwaggerKey": "logprocessorapi",
+      "Cors": {
+        "AllowedOrigins": [
+          "*"
+        ],
+        "AllowedMethods": [
+          "*"
+        ],
+        "AllowedHeaders": [
+          "*"
+        ]
+      }
     },
     {
       "DownstreamPathTemplate": "/api/LogProcessor/{everything}",
@@ -26,7 +37,18 @@
       ],
       "UpstreamHttpMethod": [ "GET" ],
       "DangerousAcceptAnyServerCertificateValidator": true,
-      "SwaggerKey": "logprocessorapi"
+      "SwaggerKey": "logprocessorapi",
+      "Cors": {
+        "AllowedOrigins": [
+          "*"
+        ],
+        "AllowedMethods": [
+          "*"
+        ],
+        "AllowedHeaders": [
+          "*"
+        ]
+      }
     }
   ]
 }

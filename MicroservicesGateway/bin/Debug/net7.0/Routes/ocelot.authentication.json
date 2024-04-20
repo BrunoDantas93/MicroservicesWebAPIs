@@ -12,7 +12,18 @@
       ],
       "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
       "DangerousAcceptAnyServerCertificateValidator": true,
-      "SwaggerKey": "authentication"
+      "SwaggerKey": "authentication",
+      "Cors": {
+        "AllowedOrigins": [
+          "*"
+        ],
+        "AllowedMethods": [
+          "*"
+        ],
+        "AllowedHeaders": [
+          "*"
+        ]
+      }
     },
     {
       "DownstreamPathTemplate": "/api/User/{everything}",
@@ -26,7 +37,18 @@
       ],
       "UpstreamHttpMethod": [ "POST", "GET", "DELETE", "PUT" ],
       "DangerousAcceptAnyServerCertificateValidator": true,
-      "SwaggerKey": "authentication"
+      "SwaggerKey": "authentication",
+      "Cors": {
+        "AllowedOrigins": [
+          "*"
+        ],
+        "AllowedMethods": [
+          "*"
+        ],
+        "AllowedHeaders": [
+          "*"
+        ]
+      }
     }
   ]
 }

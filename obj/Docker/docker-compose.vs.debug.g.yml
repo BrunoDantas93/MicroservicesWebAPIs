@@ -72,7 +72,7 @@ services:
 
   identityserver:
     image: identityserver:dev
-    container_name: "IdentityServer"
+    container_name: "IdentityServer_1"
     build:
       args:
         BUILD_CONFIGURATION: Debug

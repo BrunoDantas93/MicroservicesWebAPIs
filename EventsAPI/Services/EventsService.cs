@@ -70,6 +70,37 @@ public class EventsService
             throw ex;
         }
     }
+    /// <summary>
+    /// Lists events based on the specified criteria.
+    /// </summary>
+    /// <param name="userId">Optional. The unique identifier of the event to filter by.</param>
+    /// <returns>A task representing the asynchronous operation, containing a list of events.</returns>
+    public async Task<List<Event>> ListEventsByUser(string? userId = null)
+    {
+        try
+        {
+            // Create a filter to match documents based on the provided criteria
+            var filter = Builders<Event>.Filter.Empty;
+
+            if (userId != null)
+            {
+                // If uid is not null, add a filter to match documents with the specified unique identifier
+                filter = Builders<Event>.Filter.Eq(e => e.CreatedBy, userId);
+            }
+
+            // Execute the query to retrieve all documents that match the filter
+            var result = await _eventsCollection.Find(filter).ToListAsync();
+
+            // Return the list of documents
+            return result;
+        }
+        catch (Exception ex)
+        {
+            // In case of an exception, rethrow it for higher-level error handling
+            throw ex;
+        }
+    }
+
 
 
     /// <summary>

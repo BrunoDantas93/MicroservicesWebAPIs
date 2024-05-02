@@ -35,3 +35,16 @@ C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\Microserv
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\refint\MicroservicesHelpers.dll
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.pdb
 C:\Projects\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\ref\MicroservicesHelpers.dll
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.deps.json
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.dll
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\bin\Debug\net7.0\MicroservicesHelpers.pdb
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.csproj.AssemblyReference.cache
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.AssemblyInfoInputs.cache
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.AssemblyInfo.cs
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.csproj.CoreCompileInputs.cache
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.sourcelink.json
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.dll
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\refint\MicroservicesHelpers.dll
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\MicroservicesHelpers.pdb
+C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesHelpers\obj\Debug\net7.0\ref\MicroservicesHelpers.dll

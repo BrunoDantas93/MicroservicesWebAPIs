@@ -65,6 +65,32 @@ public class EventsController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Retrieves a list of events based on optional filtering parameters.
+    /// </summary>
+    /// <param name="uid">Optional. Filters the list to include only events associated with the specified user ID.</param>
+    /// <returns>Returns an ActionResult containing a list of events based on the applied filters.</returns>
+    /// <response code="200">OK - The list of events was successfully retrieved.</response>
+    /// <response code="400">Bad Request - Indicates an error or issue during the retrieval of events.</response>
+    [HttpGet("{cuid}", Name = "ListEventsByCreator")]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Event>))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(MicroservicesResponse))]
+    public async Task<ActionResult> ListEventsByCreator(string cuid)
+    {
+        try
+        {
+            // Call the method to retrieve the list of events based on the optional user ID filter
+            return Ok(await _eventService.ListEventsByUser(cuid));
+        }
+        catch (Exception ex)
+        {
+            // Log the error
+            _logger.LogError(400, "An error occurred during the retrieval of events.", ex);
+
+            // If an exception occurs during retrieval, return a BadRequest response with details
+            return BadRequest(new MicroservicesResponse(MicroservicesCode.FatalError, "FatalError", "An error occurred during the retrieval of events.", ex.Message));
+        }
+    }
 
     /// <summary>
     /// Registers a new event.
@@ -97,6 +123,8 @@ public class EventsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task<ActionResult> Register([FromBody] EventRequest request)
     {
+        _logger.LogInformation("Received state: {State}", request.State);
+
         try
         {
             // Ensure that the user ID claim exists
@@ -125,7 +153,7 @@ public class EventsController : ControllerBase
             ev.Address = request.Address;
             ev.Latitude = request.Latitude;
             ev.Longitude = request.Longitude;
-            ev.State = EventState.EmExecucao;
+            ev.State = request.State;
 
             // Call the method to register the event
             await _eventService.RegisterEvent(ev);

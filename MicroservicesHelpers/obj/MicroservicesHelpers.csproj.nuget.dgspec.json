@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {}
+    "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {
+    "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj",
+        "projectUniqueName": "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj",
         "projectName": "MicroservicesHelpers",
-        "projectPath": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj",
-        "packagesPath": "C:\\Users\\gpeix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesHelpers\\obj\\",
+        "projectPath": "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gpeix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -94,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

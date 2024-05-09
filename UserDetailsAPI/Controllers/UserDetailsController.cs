@@ -108,6 +108,7 @@ public class UserDetailsController : ControllerBase
             details.Address = detailsRequest.Address;
             details.Gender = detailsRequest.Gender;
             details.BirthDate = detailsRequest.BirthDate;
+            details.Nationality = detailsRequest.Nationality;
 
             // Call the method to register user details
             await _usersDetailsService.RegisterUserDetails(details);
@@ -176,6 +177,7 @@ public class UserDetailsController : ControllerBase
             ud[0].Address = detailsRequest.Address;
             ud[0].Gender = detailsRequest.Gender;
             ud[0].BirthDate = detailsRequest.BirthDate;
+            ud[0].Nationality = detailsRequest.Nationality;
 
             // Call the method to update user details
             await _usersDetailsService.UpdateUsersDetails(ud[0]);

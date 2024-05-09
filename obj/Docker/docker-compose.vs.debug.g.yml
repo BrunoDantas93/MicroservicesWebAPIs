@@ -16,10 +16,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs\CommunicationService:/app
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs:/src
-      - C:\Users\gpeix\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\gpeix\.nuget\packages\:/.nuget/packages:ro
+      - C:\Projects\MicroservicesWebAPIs\CommunicationService:/app
+      - C:\Projects\MicroservicesWebAPIs:/src
+      - C:\Users\bruno\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\bruno\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -50,10 +50,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs\EventsAPI:/app
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs:/src
-      - C:\Users\gpeix\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\gpeix\.nuget\packages\:/.nuget/packages:ro
+      - C:\Projects\MicroservicesWebAPIs\EventsAPI:/app
+      - C:\Projects\MicroservicesWebAPIs:/src
+      - C:\Users\bruno\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\bruno\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -85,10 +85,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs\IdentityServer:/app
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs:/src
-      - C:\Users\gpeix\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\gpeix\.nuget\packages\:/.nuget/packages:ro
+      - C:\Projects\MicroservicesWebAPIs\IdentityServer:/app
+      - C:\Projects\MicroservicesWebAPIs:/src
+      - C:\Users\bruno\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\bruno\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -120,10 +120,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs\LogProcessorAPI:/app
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs:/src
-      - C:\Users\gpeix\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\gpeix\.nuget\packages\:/.nuget/packages:ro
+      - C:\Projects\MicroservicesWebAPIs\LogProcessorAPI:/app
+      - C:\Projects\MicroservicesWebAPIs:/src
+      - C:\Users\bruno\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\bruno\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -155,10 +155,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs\MicroservicesGateway:/app
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs:/src
-      - C:\Users\gpeix\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\gpeix\.nuget\packages\:/.nuget/packages:ro
+      - C:\Projects\MicroservicesWebAPIs\MicroservicesGateway:/app
+      - C:\Projects\MicroservicesWebAPIs:/src
+      - C:\Users\bruno\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\bruno\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -190,10 +190,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs\UserDetailsAPI:/app
-      - C:\Users\gpeix\Documents\MicroservicesWebAPIs:/src
-      - C:\Users\gpeix\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\gpeix\.nuget\packages\:/.nuget/packages:ro
+      - C:\Projects\MicroservicesWebAPIs\UserDetailsAPI:/app
+      - C:\Projects\MicroservicesWebAPIs:/src
+      - C:\Users\bruno\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\bruno\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro

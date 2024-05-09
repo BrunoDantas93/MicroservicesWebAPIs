@@ -89,7 +89,12 @@ public class UsersDetailsService
             if (userDetailsToUpdate != null)
             {
                 // Create an update definition to set the entire user details to the provided user details
-                var updateDefinition = Builders<UserDetails>.Update.Set(e => e, ud);
+                var updateDefinition = Builders<UserDetails>.Update.Set(e => e.FirstName, ud.FirstName)
+                                                                   .Set(e => e.LastName, ud.LastName)
+                                                                   .Set(e => e.Address, ud.Address)
+                                                                   .Set(e => e.Gender, ud.Gender)
+                                                                   .Set(e => e.BirthDate, ud.BirthDate)
+                                                                   .Set(e => e.Nationality, ud.Nationality);
 
                 // Update the user details in the UserDetails collection asynchronously
                 await _userDetailsCollection.UpdateOneAsync(filterDefinition, updateDefinition);

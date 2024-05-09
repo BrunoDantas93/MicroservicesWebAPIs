@@ -3627,19 +3627,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gpeix\\.nuget\\packages\\": {}
+    "C:\\Users\\bruno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
+      "projectUniqueName": "C:\\Projects\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
       "projectName": "IdentityServer",
-      "projectPath": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
-      "packagesPath": "C:\\Users\\gpeix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\IdentityServer\\obj\\",
+      "projectPath": "C:\\Projects\\MicroservicesWebAPIs\\IdentityServer\\IdentityServer.csproj",
+      "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\MicroservicesWebAPIs\\IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gpeix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3653,8 +3653,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {
-              "projectPath": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj"
+            "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj": {
+              "projectPath": "C:\\Projects\\MicroservicesWebAPIs\\MicroservicesHelpers\\MicroservicesHelpers.csproj"
             }
           }
         }
@@ -3663,11 +3663,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3730,7 +3725,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

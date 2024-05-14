@@ -3,60 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\services\\eventstypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\services\\eventstypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\services\\eventsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\services\\eventsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\helpers\\enumerated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\helpers\\enumerated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\models\\mongodb\\eventstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\models\\mongodb\\eventstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\microservicesgateway\\routes\\ocelot.userdetailsapi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|solutionrelative:microservicesgateway\\routes\\ocelot.userdetailsapi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\microservicesgateway\\routes\\ocelot.swaggerendpoints.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|solutionrelative:microservicesgateway\\routes\\ocelot.swaggerendpoints.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\controllers\\eventstypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\controllers\\eventstypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\models\\mongodb\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\models\\mongodb\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\microservicesgateway\\routes\\ocelot.logprocessorapi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|solutionrelative:microservicesgateway\\routes\\ocelot.logprocessorapi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\microservicesgateway\\routes\\ocelot.global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|solutionrelative:microservicesgateway\\routes\\ocelot.global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\eventsapi\\models\\requests\\eventrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F294FEE7-403D-46CF-88CF-C4C8F5AF673A}|EventsAPI\\EventsAPI.csproj|solutionrelative:eventsapi\\models\\requests\\eventrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\microservicesgateway\\routes\\ocelot.eventstype.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|solutionrelative:microservicesgateway\\routes\\ocelot.eventstype.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}|UserDetailsAPI\\UserDetailsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\userdetailsapi\\services\\profilepictureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}|UserDetailsAPI\\UserDetailsAPI.csproj|solutionrelative:userdetailsapi\\services\\profilepictureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\microservicesgateway\\routes\\ocelot.events.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|solutionrelative:microservicesgateway\\routes\\ocelot.events.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}|UserDetailsAPI\\UserDetailsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\userdetailsapi\\controllers\\userdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}|UserDetailsAPI\\UserDetailsAPI.csproj|solutionrelative:userdetailsapi\\controllers\\userdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\microservicesgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F267868-8AA7-43A3-9771-071A738575B6}|MicroservicesGateway\\MicroservicesGateway.csproj|solutionrelative:microservicesgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}|UserDetailsAPI\\UserDetailsAPI.csproj|c:\\users\\gpeix\\documents\\microserviceswebapis\\userdetailsapi\\services\\usersdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2AE0E07-CC75-4CD0-8619-575BA9ABA1C8}|UserDetailsAPI\\UserDetailsAPI.csproj|solutionrelative:userdetailsapi\\services\\usersdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -129,177 +97,77 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Enumerated.cs",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Helpers\\Enumerated.cs",
-              "RelativeDocumentMoniker": "EventsAPI\\Helpers\\Enumerated.cs",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Helpers\\Enumerated.cs",
-              "RelativeToolTip": "EventsAPI\\Helpers\\Enumerated.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAIwA8AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T21:53:55.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventsService.cs",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Services\\EventsService.cs",
-              "RelativeDocumentMoniker": "EventsAPI\\Services\\EventsService.cs",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Services\\EventsService.cs",
-              "RelativeToolTip": "EventsAPI\\Services\\EventsService.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAAAE0AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T20:34:35.745Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EventsController.cs",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Controllers\\EventsController.cs",
-              "RelativeDocumentMoniker": "EventsAPI\\Controllers\\EventsController.cs",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Controllers\\EventsController.cs",
-              "RelativeToolTip": "EventsAPI\\Controllers\\EventsController.cs",
-              "ViewState": "AQIAAMYBAAAAAAAAAADwv9cBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T20:47:48.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventsType.cs",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Models\\MongoDB\\EventsType.cs",
-              "RelativeDocumentMoniker": "EventsAPI\\Models\\MongoDB\\EventsType.cs",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Models\\MongoDB\\EventsType.cs",
-              "RelativeToolTip": "EventsAPI\\Models\\MongoDB\\EventsType.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T20:47:05.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Event.cs",
               "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Models\\MongoDB\\Event.cs",
               "RelativeDocumentMoniker": "EventsAPI\\Models\\MongoDB\\Event.cs",
               "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Models\\MongoDB\\Event.cs",
               "RelativeToolTip": "EventsAPI\\Models\\MongoDB\\Event.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T20:46:54.499Z"
+              "WhenOpened": "2024-05-13T19:07:40.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EventsTypeController.cs",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Controllers\\EventsTypeController.cs",
-              "RelativeDocumentMoniker": "EventsAPI\\Controllers\\EventsTypeController.cs",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Controllers\\EventsTypeController.cs",
-              "RelativeToolTip": "EventsAPI\\Controllers\\EventsTypeController.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAmwI4AAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "EventRequest.cs",
+              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Models\\Requests\\EventRequest.cs",
+              "RelativeDocumentMoniker": "EventsAPI\\Models\\Requests\\EventRequest.cs",
+              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Models\\Requests\\EventRequest.cs",
+              "RelativeToolTip": "EventsAPI\\Models\\Requests\\EventRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T20:46:34.424Z"
+              "WhenOpened": "2024-05-13T19:06:46.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfilePictureService.cs",
+              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\UserDetailsAPI\\Services\\ProfilePictureService.cs",
+              "RelativeDocumentMoniker": "UserDetailsAPI\\Services\\ProfilePictureService.cs",
+              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\UserDetailsAPI\\Services\\ProfilePictureService.cs",
+              "RelativeToolTip": "UserDetailsAPI\\Services\\ProfilePictureService.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowFsAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T18:28:47.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDetailsController.cs",
+              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\UserDetailsAPI\\Controllers\\UserDetailsController.cs",
+              "RelativeDocumentMoniker": "UserDetailsAPI\\Controllers\\UserDetailsController.cs",
+              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\UserDetailsAPI\\Controllers\\UserDetailsController.cs",
+              "RelativeToolTip": "UserDetailsAPI\\Controllers\\UserDetailsController.cs",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAowP8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T18:28:01.773Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EventsTypeService.cs",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Services\\EventsTypeService.cs",
-              "RelativeDocumentMoniker": "EventsAPI\\Services\\EventsTypeService.cs",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Services\\EventsTypeService.cs",
-              "RelativeToolTip": "EventsAPI\\Services\\EventsTypeService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "EventsAPI\\Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\EventsAPI\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "EventsAPI\\Controllers\\EventsController.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAnwJIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T21:54:20.147Z"
+              "WhenOpened": "2024-05-09T23:24:58.347Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ocelot.userdetailsapi.json",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.userdetailsapi.json",
-              "RelativeDocumentMoniker": "MicroservicesGateway\\Routes\\ocelot.userdetailsapi.json",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.userdetailsapi.json",
-              "RelativeToolTip": "MicroservicesGateway\\Routes\\ocelot.userdetailsapi.json",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-22T20:36:01.005Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Program.cs",
-              "RelativeDocumentMoniker": "MicroservicesGateway\\Program.cs",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Program.cs",
-              "RelativeToolTip": "MicroservicesGateway\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "UsersDetailsService.cs",
+              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\UserDetailsAPI\\Services\\UsersDetailsService.cs",
+              "RelativeDocumentMoniker": "UserDetailsAPI\\Services\\UsersDetailsService.cs",
+              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\UserDetailsAPI\\Services\\UsersDetailsService.cs",
+              "RelativeToolTip": "UserDetailsAPI\\Services\\UsersDetailsService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwFMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T20:36:01.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ocelot.SwaggerEndPoints.json",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.SwaggerEndPoints.json",
-              "RelativeDocumentMoniker": "MicroservicesGateway\\Routes\\ocelot.SwaggerEndPoints.json",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.SwaggerEndPoints.json",
-              "RelativeToolTip": "MicroservicesGateway\\Routes\\ocelot.SwaggerEndPoints.json",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-22T20:36:01.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ocelot.LogProcessorAPI.json",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.LogProcessorAPI.json",
-              "RelativeDocumentMoniker": "MicroservicesGateway\\Routes\\ocelot.LogProcessorAPI.json",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.LogProcessorAPI.json",
-              "RelativeToolTip": "MicroservicesGateway\\Routes\\ocelot.LogProcessorAPI.json",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwDIAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-22T20:36:01.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ocelot.global.json",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.global.json",
-              "RelativeDocumentMoniker": "MicroservicesGateway\\Routes\\ocelot.global.json",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.global.json",
-              "RelativeToolTip": "MicroservicesGateway\\Routes\\ocelot.global.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-22T20:36:01.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ocelot.eventstype.json",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.eventstype.json",
-              "RelativeDocumentMoniker": "MicroservicesGateway\\Routes\\ocelot.eventstype.json",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.eventstype.json",
-              "RelativeToolTip": "MicroservicesGateway\\Routes\\ocelot.eventstype.json",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADIAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-22T20:36:01.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ocelot.events.json",
-              "DocumentMoniker": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.events.json",
-              "RelativeDocumentMoniker": "MicroservicesGateway\\Routes\\ocelot.events.json",
-              "ToolTip": "C:\\Users\\gpeix\\Documents\\MicroservicesWebAPIs\\MicroservicesGateway\\Routes\\ocelot.events.json",
-              "RelativeToolTip": "MicroservicesGateway\\Routes\\ocelot.events.json",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADIAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-22T20:36:01.104Z"
+              "WhenOpened": "2024-05-09T21:37:17.267Z"
             }
           ]
         }

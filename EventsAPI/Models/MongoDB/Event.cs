@@ -23,10 +23,10 @@ public class Event
     public string Address { get; set; } = string.Empty;
 
     [BsonElement("Latitude")]
-    public int Latitude { get; set; } = 0;
+    public double Latitude { get; set; } = 0;
 
     [BsonElement("Longitude")]
-    public int Longitude { get; set; } = 0;
+    public double Longitude { get; set; } = 0;
 
     [BsonElement("EventTypes")]
     public List<string> EventTypes { get; set; } = new List<string>();

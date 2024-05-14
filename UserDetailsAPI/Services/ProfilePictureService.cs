@@ -89,7 +89,7 @@ public class ProfilePictureService
             if (profilePictureToUpdate != null)
             {
                 // Create an update definition to set the entire profile picture to the provided profile picture
-                var updateDefinition = Builders<ProfilePictures>.Update.Set(e => e, ud);
+                var updateDefinition = Builders<ProfilePictures>.Update.Set(e => e.ProfilePicture, ud.ProfilePicture);
 
                 // Update the profile picture in the ProfilePictures collection asynchronously
                 await _profilePictureCollection.UpdateOneAsync(filterDefinition, updateDefinition);
